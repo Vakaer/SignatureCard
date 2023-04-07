@@ -1,0 +1,12 @@
+.card-holder-wrapper {
+    display: flex;
+    margin: 6rem auto auto auto;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    background: #FFFFFF;
+    mix-blend-mode: soft-light;
+    border: 1px solid #FFFFFF;
+    border-radius: 48px 48px 0px 0px;
+}

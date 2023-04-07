@@ -1,0 +1,8 @@
+.box-shadow {
+    background: radial-gradient(50% 50% at 50% 50%, #020201 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+}

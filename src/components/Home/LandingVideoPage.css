@@ -1,0 +1,77 @@
+.video-background {
+    background-image: url("../../assets/videos/world-transparent.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin-top: 0rem;
+    overflow: hidden;
+}
+
+.LandingPageHeading {
+
+    z-index: 25;
+    text-align: center;
+    margin-top: 20rem;
+    color: #fff;
+    font-size: 1.5vh;
+    letter-spacing: 1vh;
+    font-family: "HalveticaNow";
+
+}
+
+.moving-border-bottom {
+    margin-top: 10rem;
+    width: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.discover-btn::after,
+.lineh1 {
+    content: '';
+}
+
+.discover-btn {
+    padding-bottom: -10px;
+}
+
+.lineh1 {
+    left: 0;
+    height: 2px;
+    background-color: #fff;
+    animation: lineH 2s infinite linear 5s;
+    animation-delay: 100ms;
+    animation: lineH 5s infinite linear 5s;
+
+
+}
+
+@keyframes lineH {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 75%;
+    }
+
+    /* 
+    50% {
+        width: 0%;
+    } */
+
+}
+
+@keyframes lineE {
+    from {
+        width: 75%;
+    }
+
+    to {
+        width: 5%;
+    }
+}

@@ -1,0 +1,11 @@
+::placeholder {
+    color: white;
+}
+
+.navInput {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    width: 80px;
+}

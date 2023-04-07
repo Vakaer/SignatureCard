@@ -1,0 +1,25 @@
+.border-radius-50 {
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+}
+
+.margin {
+    margin: 7rem auto auto auto;
+}
+
+.rotation {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #fff;
+}
+
+.border-left {
+    height: 90px;
+    width: 1px;
+    background-color: #fff;
+}
+
+.blend-mode {
+    mix-blend-mode: screen;
+}

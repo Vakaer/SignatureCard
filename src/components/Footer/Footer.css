@@ -1,0 +1,26 @@
+.icon {
+    padding: 0 1rem;
+}
+
+.margin {
+    margin: 8rem auto auto auto;
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+    font-family: 'NeueMontrealRegular';
+}
+
+ul li {
+    list-style-type: none;
+    font-family: 'NeueMontrealRegular';
+}
+
+.hr {
+    border: 1px solid white;
+}
+
+ul {
+    padding: 0;
+}

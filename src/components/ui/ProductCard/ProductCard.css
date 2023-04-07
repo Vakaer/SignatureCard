@@ -1,0 +1,65 @@
+.credit-card {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+}
+
+.credit-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.credit-card-inner:hover {
+    scale: 1.1;
+    text-shadow: 0 0 10px #FFFFFF;
+
+}
+
+.credit-card-inner:hover .action-icons {
+    scale: 1.4;
+}
+
+
+
+
+.card-title-wrapper {
+    margin: 1rem;
+}
+
+.card-title {
+    font-family: 'InterRegular';
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+.page-title {
+    font-family: 'HalveticaNowRegular';
+    letter-spacing: 3px;
+}
+
+
+
+.material-name {
+    font-size: 12px;
+    font-family: 'NeueMontrealRegular';
+    color: #FFFFFF;
+}
+
+
+.material {
+    height: 20px;
+
+}
+
+.color {
+    width: 14.7px;
+    height: 14.7px;
+}
+
+.action-icons {
+    width: 14.7px;
+    height: 14.7px;
+}
