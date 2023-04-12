@@ -6,7 +6,7 @@ import iconArrow from "../../assets/icons/ic-arrow-down.svg";
 export const Footer = () => {
 	return (
 		<>
-			<section className='our-designers'>
+			<section className='footer'>
 				<div className='row'>
 					<div className='col-12 mt-5 '>
 						<div
@@ -23,10 +23,10 @@ export const Footer = () => {
 							</span>
 						</div>
 						<div
-							className='text-light col-12 d-flex flex-row justify-content-between ps-2 pe-2 margin'
+							className='text-light m-auto col-12 d-flex flex-row flex-wrap justify-content-between ps-2 pe-2 margin'
 							style={{ width: "90%" }}
 						>
-							<div className='col-2'>
+							<div className='col-6 col-md-3 p-1 '>
 								<p className='title'>Information</p>
 								<hr className='hr' />
 								<ul>
@@ -43,7 +43,7 @@ export const Footer = () => {
 									<li>Trace My Order</li>
 								</ul>
 							</div>
-							<div className='col-2'>
+							<div className='col-6 col-md-3 p-1'>
 								<p className='title'>The Collections</p>
 								<hr className='hr' />
 								<ul>
@@ -57,7 +57,7 @@ export const Footer = () => {
 								</ul>
 							</div>
 
-							<div className='col-2'>
+							<div className='col-6 col-md-3 p-1'>
 								<p className='title '>Our channels</p>
 								<hr className='hr' />
 								<ul>
@@ -72,7 +72,7 @@ export const Footer = () => {
 									<li>Weibo</li>
 								</ul>
 							</div>
-							<div className='col-2'>
+							<div className='col-6  col-md-3 p-1'>
 								<p className='title'>Legal Notice</p>
 								<hr className='hr' />
 								<ul>

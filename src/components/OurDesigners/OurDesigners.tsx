@@ -14,7 +14,7 @@ export const OurDesigners = () => {
 					<div className='mt-5'>
 						<h2 className='text-center text-light'>OUR DESIGNERS</h2>
 						<div
-							className='d-flex justify-content-center gap-1 align-items-center'
+							className='d-flex justify-content-center  gap-1 align-items-center'
 							style={{ marginTop: "7rem" }}
 						>
 							<img src={Prev} className='icons' />

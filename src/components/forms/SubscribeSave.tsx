@@ -14,7 +14,7 @@ export const SubscribeSave = (props: SubscribeSaveProps) => {
 	};
 	return (
 		<>
-			<div className='col-md-4 col-11 form'>
+			<div className='col-md-8 col-lg-4 col-11 form'>
 				<div className='blurred-img'></div>
 				<img src={icClose} onClick={props.onClick} className='closeBtn' />
 				<div

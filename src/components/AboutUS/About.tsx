@@ -11,27 +11,30 @@ export const About = () => {
 		<>
 			<div className='row '>
 				<section className='about-us'>
-					<div className='d-flex justify-content-center align-items-center '>
-						<div className='about-us-desc  text-end' style={{ color: "white" }}>
+					<div className='d-flex justify-content-between p-sm-2 col-12  flex-row align-items-center '>
+						<div
+							className='text-center col-5 text-md-center  text-lg-end ps-lg-5 pe-lg-5 col-lg-3 '
+							style={{ color: "white" }}
+						>
 							<h1>About Us</h1>
-							<p className='text-end desc' style={{ fontSize: "16px" }}>
+							<p className='desc text-md-end' style={{ fontSize: "16px" }}>
 								Our business is an exclusive service that offers personalized metal credit cards.
 								The business concept is an online platform, which allows customers to turn their
 								credit cards into personalized works of art. Customers can choose from different
 								designs and styles.
 							</p>
-							<button className='learn-more-btn'>Learn More</button>
+							<button className='learn-more-btn '>Learn More</button>
 						</div>
-						<div className='cloudy-img  d-inline'>
+						<div className='cloudy-img'>
 							<img src={cloudyImage} style={{ mixBlendMode: "screen" }} />
 						</div>
-						<div className='cards d-inline'>
+						<div className='cards col-5 col-lg-3 d-inline'>
 							<img src={cardFront} className='cardFront' />
 							<img src={cardBack} className='cardBack' />
 						</div>
 					</div>
 					<div
-						className='m-0 d-flex flex-row justify-content-around align-items-center'
+						className='m-0 d-flex flex-row justify-content-around flex-wrap align-content-md-center'
 						style={{
 							backdropFilter: "blur(60px)",
 							color: "white",

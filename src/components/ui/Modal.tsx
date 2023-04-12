@@ -21,7 +21,7 @@ const Backdrop = (props: BackDropProps) => {
 
 const ModalOverlay = (props: ModalOverLay) => {
 	return (
-		<div className='modals col-md-10'>
+		<div className='modals col-12'>
 			<div className='content'>{props.children}</div>
 		</div>
 	);

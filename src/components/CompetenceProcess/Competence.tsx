@@ -20,8 +20,8 @@ export const Competence = () => {
 						>
 							Patented, Secure And Simple Process
 						</h1>
-						<div className='d-flex flex-row m-auto'>
-							<div className='ps-5 pe-5 text-center'>
+						<div className='d-flex col-12 flex-wrap flex-row'>
+							<div className='ps-5 col-12 col-md-6 col-lg-3 pe-5 text-center'>
 								<img src={step1} className='mb-4' />
 								<h5 className='text-center'>
 									<span>1. </span> Create Your Card
@@ -31,7 +31,7 @@ export const Competence = () => {
 									securely online.
 								</p>
 							</div>
-							<div className='ps-5 pe-5 text-center'>
+							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center'>
 								<img src={step2} className='mb-4' />
 								<h5 className='text-center'>
 									<span>2. </span>Send Your Card
@@ -41,7 +41,7 @@ export const Competence = () => {
 									2 - 3 days
 								</p>
 							</div>
-							<div className='ps-5 pe-5 text-center'>
+							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center'>
 								<img src={step3} className='mb-4' />
 								<h5 className='text-center'>
 									<span>3. </span> Transfer Data & EMV
@@ -51,7 +51,7 @@ export const Competence = () => {
 									credit card.
 								</p>
 							</div>
-							<div className='ps-5 pe-5 text-center'>
+							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center'>
 								<img src={step4} className='mb-4' />
 								<h5 className='text-center'>
 									<span>4. </span>Receive Your Card
@@ -62,17 +62,7 @@ export const Competence = () => {
 								</p>
 							</div>
 						</div>
-						<button
-							style={{
-								width: "15%",
-								padding: "10px",
-								borderRadius: "25px",
-								color: "#144F53",
-								border: "none",
-							}}
-						>
-							Create Your Card now
-						</button>
+						<button className='createCardButton'>Create Your Card now</button>
 					</div>
 				</div>
 			</section>

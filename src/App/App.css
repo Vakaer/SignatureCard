@@ -39,13 +39,13 @@
 }
 
 .background-image {
-    /* background-image: url("../assets/videos/world.gif"); */
-    background-image: url("../assets/bg/bg.png");
-    /* background-image: url("../assets/test-img.jpg"); */
+    /* background-image: url("../assets/bg/bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    height: inherit;
+    background-size: cover; */
+    background: rgb(73, 63, 47);
+    background: linear-gradient(90deg, rgba(73, 63, 47, 1) 0%, rgba(19, 25, 34, 1) 40%, rgba(18, 21, 28, 1) 100%);
+    width: 100%;
+    height: calc(20vh+100vh);
 }
 
 .video-background {
@@ -78,6 +78,37 @@
     -webkit-animation: spin 15s linear infinite;
     -moz-animation: spin 15s linear infinite;
     animation: spin 15s linear infinite;
+}
+
+@media only screen and (max-width: 576px) {
+
+    /* Styles for screens with a maximum width of 576 pixels go here */
+
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    /* Styles for screens with a minimum width of 576 pixels and a maximum width of 768 pixels go here */
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* Styles for screens with a minimum width of 768 pixels and a maximum width of 992 pixels go here */
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* Styles for screens with a minimum width of 992 pixels and a maximum width of 1200 pixels go here */
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* Styles for screens with a minimum width of 1200 pixels go here */
+
 }
 
 @-moz-keyframes spin {

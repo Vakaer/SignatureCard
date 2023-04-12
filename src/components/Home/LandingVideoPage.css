@@ -3,8 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+
     padding: 0;
-    margin-top: 0rem;
+    margin-top: -8rem;
     overflow: hidden;
 }
 
@@ -37,6 +38,11 @@
 
 .discover-btn {
     padding-bottom: -10px;
+    margin: auto;
+}
+
+.create-card-button {
+    margin-top: 3rem;
 }
 
 .lineh1 {
@@ -47,6 +53,46 @@
     animation-delay: 100ms;
     animation: lineH 5s infinite linear 5s;
 
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    /* Styles for screens with a maximum width of 576 pixels go here */
+    .moving-border-bottom {
+        margin-top: 15rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    /* Styles for screens with a minimum width of 576 pixels and a maximum width of 768 pixels go here */
+    .moving-border-bottom {
+        margin-top: 15rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* Styles for screens with a minimum width of 768 pixels and a maximum width of 992 pixels go here */
+    .moving-border-bottom {
+        margin-top: 15rem;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* Styles for screens with a minimum width of 992 pixels and a maximum width of 1200 pixels go here */
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* Styles for screens with a minimum width of 1200 pixels go here */
 
 }
 

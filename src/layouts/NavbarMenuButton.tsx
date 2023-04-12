@@ -1,4 +1,5 @@
 import React, { useState, MouseEvent } from "react";
+import "../components/Navbar.css";
 import icHamburger from "../assets/icons/ic-hamburger.svg";
 export type MenuProps = {
 	//isOpen: boolean;
@@ -10,9 +11,7 @@ const NavbarMenuButton = (props: MenuProps) => {
 		<img
 			onClick={(event) => props.onClick(event)}
 			src={icHamburger}
-			height='40px'
-			width='40px'
-			className='text-center'
+			className='text-center icons'
 			alt='Signature Logo'
 		/>
 	);

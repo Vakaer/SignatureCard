@@ -5,11 +5,16 @@ type GenericButtonProps = {
 	children: any;
 	style?: React.CSSProperties;
 	className?: string;
+	handleClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
-const ProductButton = ({ children, style, className }: GenericButtonProps) => {
+const ProductButton = ({ children, style, className, handleClick }: GenericButtonProps) => {
 	return (
 		<>
-			<button className={`btn btn-outline-light rounded-pill ${className}`} style={style}>
+			<button
+				className={`btn btn-outline-light rounded-pill ${className}`}
+				onClick={handleClick}
+				style={style}
+			>
 				{children}
 			</button>
 		</>

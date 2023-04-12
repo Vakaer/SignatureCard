@@ -17,11 +17,8 @@ const Menu = (props: MenuProps) => {
 	return (
 		<Modal onClose={props.onClick}>
 			<section>
-				<div style={{ padding: "0 6rem" }}>
-					<div
-						style={{ display: "flex", flexFlow: "row-reverse nowrap", marginTop: "5rem" }}
-						className='mt-3'
-					>
+				<div className='container'>
+					<div className='d-flex flex-row-reverse'>
 						<button onClick={props.onClick} className='socials'>
 							<img src={cross} className='imgDimensions' />
 						</button>

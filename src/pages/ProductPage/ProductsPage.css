@@ -1,42 +1,75 @@
-.competence-process {
-    margin-top: 10rem;
-    color: white;
+.bg-black {
+    background-color: black;
 }
 
-.createCardButton {
+h1 {
+    font-family: 'NeueMontrealRegular';
+    font-size: 50px;
+}
 
+.products p {
+    font-family: "NeueMontrealRegular";
+    margin: 0;
+    padding: 0;
+}
 
-    padding: 10px;
+.next-page-btn {
+    margin: 2rem;
+    background-color: #F8D20A;
+    padding: 0.2rem 2rem 0.2rem 2rem;
     border-radius: 25px;
-    color: #144F53;
+    padding: 0.3rem 2rem;
     border: none;
+    font-family: "NeueMontrealRegular";
 }
 
 @media only screen and (max-width: 576px) {
 
     /* Styles for screens with a maximum width of 576 pixels go here */
-    .createCardButton {
-        width: 80%;
-        padding: 10px;
+    .card-dimensions img {
+        width: 100%;
+        height: 100%;
     }
+
+
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
 
     /* Styles for screens with a minimum width of 576 pixels and a maximum width of 768 pixels go here */
-    .createCardButton {
-        width: 30%;
+    .card-dimensions img {
+        width: 100%;
+        height: 100%;
     }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
     /* Styles for screens with a minimum width of 768 pixels and a maximum width of 992 pixels go here */
+    .card-dimensions img {
+        width: 80%;
+        height: 80%;
+    }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* Styles for screens with a minimum width of 992 pixels and a maximum width of 1200 pixels go here */
+    .card-dimensions img {
+        width: 80%;
+        height: 80%;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
+
     /* Styles for screens with a minimum width of 1200 pixels go here */
+    .card-dimensions img {
+        width: 80%;
+        height: 80%;
+    }
+
 }

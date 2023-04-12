@@ -19,6 +19,7 @@ interface ProductCardProps {
 	cardNameFirst: string;
 	cardNameLast: string;
 	cardImage: string | undefined;
+	onClick?: () => void;
 }
 
 type GradientProps = {
@@ -26,12 +27,12 @@ type GradientProps = {
 };
 
 export const ProductCard = (
-	{ className, cardNameFirst, cardNameLast, cardImage }: ProductCardProps,
+	{ className, cardNameFirst, cardNameLast, cardImage, onClick }: ProductCardProps,
 	{ background_gradient }: GradientProps
 ) => {
 	return (
 		<>
-			<div className='credit-card credit-card-inner'>
+			<div className='credit-card m-auto credit-card-inner ' onClick={onClick}>
 				<div className={className}>
 					<img src={cardImage} style={{ width: "100%", height: "100%" }} />
 				</div>
@@ -41,18 +42,18 @@ export const ProductCard = (
 					</h6>
 					<h6 className='text-center card-title'>{cardNameLast}</h6>
 				</div>
-				<div className='d-flex flex-row  card-material-wrapper gap-4 justify-content-center'>
-					<div className='d-flex material flex-column'>
+				<div className='d-flex flex-row card-material-wrapper p-lg-3 gap-4 justify-content-center'>
+					<div className='d-flex material  flex-column'>
 						<span className='material-name'>METAL</span>
-						<img src={Metal} style={{ width: "100%", height: "100%" }} />
+						<img src={Metal} />
 					</div>
 					<div className='d-flex material flex-column '>
 						<span className='material-name'>PREMIUM</span>
-						<img src={Premium} style={{ width: "100%", height: "100%" }} />
+						<img src={Premium} />
 					</div>
 					<div className='d-flex material flex-column'>
 						<span className='material-name'>DIAMOND</span>
-						<img src={Diamond} style={{ width: "100%", height: "100%" }} />
+						<img src={Diamond} />
 					</div>
 				</div>
 				<div className='colors d-flex justify-content-center gap-2 mt-5 mb-3 align-items-center flex-column'>

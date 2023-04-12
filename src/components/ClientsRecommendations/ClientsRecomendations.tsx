@@ -14,12 +14,15 @@ import logo9 from "../../assets/logos/logo9.png";
 export const ClientsRecomendations = () => {
 	return (
 		<>
-			<section className='our-designers'>
+			<section className='clients-reccommendation'>
 				<div className='row'>
 					<div className='mt-5'>
 						<h2 className='text-center text-light'>CLIENTS AND RECOMMENDATIONS</h2>
-						<div className='d-flex flex-column gap-5'>
-							<div className='d-flex flex-row text-light justify-content-around w-75 margin'>
+						<div className='d-flex flex-column gap-5 '>
+							<div
+								className='d-flex flex-row text-light ms-auto me-auto flex-wrap justify-content-around w-75'
+								style={{ marginTop: "7rem" }}
+							>
 								<div className='d-flex flex-column'>
 									<div className='text-center lh-1'>
 										<img src={client} className='border-radius-50' />
@@ -60,7 +63,7 @@ export const ClientsRecomendations = () => {
 								<div className='Clients  d-flex flex-row align-items-center'>
 									<h4 className='rotation'>Clients</h4>
 									{/* <div className='border-left ms-3'></div> */}
-									<div className='d-flex flex-row gap-2'>
+									<div className='d-flex flex-wrap justify-content-around flex-row gap-2'>
 										<img src={logo1} className='blend-mode' />
 										<img src={logo2} className='blend-mode' />
 										<img src={logo3} className='blend-mode' />
@@ -75,10 +78,10 @@ export const ClientsRecomendations = () => {
 										<img src={logo3} className='blend-mode' />
 									</div>
 								</div>
-								<div className='Brands mt-5 d-flex flex-row align-items-center'>
+								<div className='Brands mt-5 d-flex  flex-row align-items-center'>
 									<h4 className='rotation'>Brands</h4>
 									{/* <div className='border-left ms-3'></div> */}
-									<div className='d-flex flex-row gap-2'>
+									<div className='d-flex flex-row justify-content-around flex-wrap  gap-2'>
 										<img src={logo1} className='blend-mode' />
 										<img src={logo2} className='blend-mode' />
 										<img src={logo3} className='blend-mode' />

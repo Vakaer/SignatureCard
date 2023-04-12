@@ -16,8 +16,10 @@ import iconCall from "../../assets/icons/ic-white-call.svg";
 import iconAdd from "../../assets/icons/ic-white-add.svg";
 import iconLocation from "../../assets/icons/ic-white-location.svg";
 import { ProductCard } from "../ui/ProductCard/ProductCard";
+import { useNavigate } from "react-router-dom";
 
 export const Products = () => {
+	const navigate = useNavigate();
 	return (
 		<>
 			<div className='row mt-5'>
@@ -25,10 +27,11 @@ export const Products = () => {
 					<div className='d-flex position-relative flex-column gap-5 justify-content-center align-items-center '>
 						<h1 className='text-light page-title'>OUR PRODUCT</h1>
 						<div
-							className='d-flex mt-5 flex-lg-row flex-md-column  flex-column justify-content-between'
+							className='d-flex mt-5 flex-sm-column flex-lg-row gap-5 justify-content-between'
 							style={{ width: "60%" }}
 						>
 							<ProductCard
+								onClick={() => navigate("/customize-card")}
 								cardImage={pinkcard}
 								cardNameFirst='SIGNATURE'
 								cardNameLast='CREDIT CARD'

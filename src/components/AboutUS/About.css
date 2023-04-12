@@ -10,12 +10,10 @@
 
 .cloudy-img {
     position: relative;
+    visibility: visible;
 }
 
-.cloudy-img img {
-    width: 688px;
-    height: 641px;
-}
+
 
 .cards img {
     width: 250px;
@@ -40,7 +38,7 @@
 
 
 .desc {
-    padding: 0rem 0rem 0rem 9.5rem;
+    padding: 0rem 0rem 0rem 5rem;
 }
 
 .learn-more-btn {
@@ -55,6 +53,70 @@
 .about-us-icons {
     width: 20px;
     height: 20px;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    /* Styles for screens with a maximum width of 576 pixels go here */
+    .about-us-desc {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .cloudy-img img {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    /* Styles for screens with a minimum width of 576 pixels and a maximum width of 768 pixels go here */
+    .about-us-desc {
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .desc {
+        padding: 0rem 0rem 0rem 5rem;
+    }
+
+    .cloudy-img img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* Styles for screens with a minimum width of 768 pixels and a maximum width of 992 pixels go here */
+    .about-us-desc {
+        display: inline-block;
+        width: min-content;
+        flex-basis: 20%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* Styles for screens with a minimum width of 992 pixels and a maximum width of 1200 pixels go here */
+    .about-us-desc {
+        display: inline-block;
+        width: min-content;
+        flex-basis: 20%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* Styles for screens with a minimum width of 1200 pixels go here */
+    .about-us-desc {
+        display: inline-block;
+        width: min-content;
+        flex-basis: 20%;
+    }
 }
 
 @keyframes moveUp {
