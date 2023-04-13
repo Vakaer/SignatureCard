@@ -10,6 +10,11 @@
     width: 80px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .nav-gradient {
     background: rgb(73, 63, 47);
     background: linear-gradient(90deg, rgba(73, 63, 47, 1) 0%, rgba(19, 25, 34, 1) 40%, rgba(18, 21, 28, 1) 100%);
