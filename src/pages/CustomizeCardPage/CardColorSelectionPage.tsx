@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import card from "../../assets/cards/CardColorSelectionPage/background/bg-sea-blue.png";
+import chipdark from "../../assets/cards/CardColorSelectionPage/Borders/chip-card-1.png";
+import chiplight from "../../assets/cards/CardColorSelectionPage/Borders/chip-card-2.png";
+import BorderOne from "../../assets/cards/CardColorSelectionPage/Borders/border-card-1.png";
+import LogoForPinkcard from "../../assets/cards/CardColorSelectionPage/CardLogo/logo-card-1.png";
+import bgBlack from "../../assets/cards/CardColorSelectionPage/background/bg-shiny-black.png";
 import "../CustomizeCardPage/CardColorSelectionPage.css";
 import { CardBgImageData, CardColorsData } from "./data/data";
 
@@ -7,13 +11,26 @@ export const CardColorSelection = () => {
 	const [Index, setIndex] = useState(0);
 	const [cardBackground, setCardBackground] = useState(CardBgImageData);
 	const [bg, setBg] = useState<any>([]);
+	const [border, setBorder] = useState(BorderOne);
+	const [chip, setChip] = useState(chiplight);
+	console.log(chip);
 	useEffect(() => {
 		const newvalue = cardBackground.filter((value, index) => {
 			return index === Index;
 		});
+		const back = bg.filter((value: any) => {
+			if (value.id === 4 || value.id === 1) {
+				setChip(chipdark);
+			} else if (value.id === 5) {
+				setChip("");
+			} else {
+				setChip(chiplight);
+			}
+		});
 		setBg(newvalue);
+		console.log(back);
 	}, [Index]);
-	//console.log(bg);
+	// console.log("bg: ", bg);
 	return (
 		<>
 			<section className='customize-card-page-bg d-flex flex-column justify-content-center '>
@@ -36,11 +53,33 @@ export const CardColorSelection = () => {
 									const { id, background } = value;
 
 									return (
-										<img
-											key={Index}
-											src={background}
-											style={{ width: "758px", height: "428px", margin: "auto" }}
-										/>
+										<div className='position-relative card'>
+											<img
+												src={BorderOne}
+												className='position-absolute'
+												style={{ top: "2rem", left: "2rem", height: "86%" }}
+											/>
+											<img
+												src={LogoForPinkcard}
+												className='position-absolute'
+												style={{
+													top: "2rem",
+													left: "2rem",
+													height: "86%",
+													mixBlendMode: "screen",
+												}}
+											/>
+											<img
+												src={chip}
+												className='position-absolute'
+												style={{ top: "6rem", left: "5rem" }}
+											/>
+											<img
+												key={Index}
+												src={background}
+												style={{ width: "758px", height: "428px", margin: "auto" }}
+											/>
+										</div>
 									);
 								})}
 							</div>
