@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../CardSelection/PremiumMostSold.css";
-import { MostSoldCard } from "./MostSoldCard/MostSoldCard";
 import blackcard from "../../../assets/cards/card-black.png";
 import { CardData } from "../CardSelection/MostSoldCard/cardData";
 
@@ -37,14 +36,14 @@ export const PremiumMostSold = () => {
 
 	return (
 		<>
-			<section className='premium-most-sold'>
+			<section className='premium-most-sold position-relative'>
 				<div className='row'>
 					<div className='mt-5 mb-5'>
 						<h2 className='text-center text-light' style={{ fontFamily: "HavleticaNowText" }}>
 							PREMIUM MOST SOLD
 						</h2>
-						<div className='col-10 col-md-8 m-auto'>
-							<div className='card-holder-wrapper  ms-auto ml-auto position-relative'>
+						<div className='col-10 col-md-8 m-auto '>
+							<div className='card-holder-wrapper  ms-auto ml-auto'>
 								<div className='card-holder d-flex gap-2 flex-row ' style={{ overflow: "hidden" }}>
 									{cardImage.map((value: any, index: number) => {
 										const { id, image } = value;
@@ -65,6 +64,8 @@ export const PremiumMostSold = () => {
 									}
 								})}
 							</div>
+						</div>
+						<div className='d-flex position-absolute'>
 							<button onClick={() => next()}>next</button>
 							<button onClick={() => previous()}>prev</button>
 						</div>
