@@ -28,7 +28,7 @@ function Navbar(props: NavbarProps) {
 	useEffect(() => {});
 	return (
 		<nav className={`${pathname == "/products" ? "blackbgStyle" : "nav-gradient"}`}>
-			<div className='row justify-content-between position-relative margin'>
+			<div className='row col-12 justify-content-between position-relative margin'>
 				<div className='col-3 d-inline mt-md-4 text-center'>
 					<ProductButton style={{ color: "white" }}>
 						<Link to='products'>Products</Link>
