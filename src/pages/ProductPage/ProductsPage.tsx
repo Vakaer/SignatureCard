@@ -7,7 +7,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 export const ProductsPage = () => {
 	return (
 		<>
-			<section className='products-page'>
+			<section className='products-page background-image'>
 				<div className='col-12 bg-black text-light'>
 					<div className='container p0' style={{ paddingBottom: "30rem" }}>
 						<h1 className='pt-5'>PRODUCTS</h1>

@@ -10,7 +10,7 @@ export const About = () => {
 	return (
 		<>
 			<div className='row '>
-				<section className='about-us'>
+				<section className='about-us p-0'>
 					<div className='d-flex justify-content-between p-sm-2 col-12  flex-row align-items-center '>
 						<div
 							className='text-center col-5 text-md-center  text-lg-end ps-lg-5 pe-lg-5 col-lg-3 '
@@ -36,7 +36,6 @@ export const About = () => {
 					<div
 						className='m-0 d-flex flex-row justify-content-around flex-wrap align-content-md-center'
 						style={{
-							backdropFilter: "blur(60px)",
 							color: "white",
 							background: "#FFFFFF1A",
 							padding: "1rem",

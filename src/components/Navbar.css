@@ -1,3 +1,13 @@
+.navbar-bg {
+    background-image: url("../assets/bg/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: rgb(73, 63, 47);
+    background: linear-gradient(90deg, rgba(73, 63, 47, 1) 0%, rgba(19, 25, 34, 1) 40%, rgba(18, 21, 28, 1) 100%); */
+    width: 100%;
+    height: calc(20vh+100vh);
+}
+
 ::placeholder {
     color: white;
 }

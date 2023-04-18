@@ -14,7 +14,7 @@ export const LandingVideoPage = () => {
 	return (
 		<>
 			<div className='row'>
-				<div className='col-12 p-0 '>
+				<div className='col-12'>
 					<div className='video-background'>
 						<div
 							className='d-flex justify-content-center flex-column'
@@ -22,6 +22,12 @@ export const LandingVideoPage = () => {
 						>
 							<h4 className='LandingPageHeading '>WHERE MONEY LIVES</h4>
 							{formIsVisible && <SubscribeSave onClick={hideFormHandler} />}
+							<h3
+								className='text-light'
+								style={{ fontSize: "22px", fontFamily: "NeueMontrealRegular", marginLeft: "6rem" }}
+							>
+								Behind the scenes
+							</h3>
 							<div className='moving-border-bottom '>
 								<button
 									className='discover-btn'

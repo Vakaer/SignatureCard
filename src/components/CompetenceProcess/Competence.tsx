@@ -8,7 +8,7 @@ import React from "react";
 export const Competence = () => {
 	return (
 		<>
-			<section className='competence-process pb-5'>
+			<section className='competence-process-bg'>
 				<div className='row'>
 					<div
 						className='d-flex flex-column gap-5 align-items-center'

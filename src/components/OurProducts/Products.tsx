@@ -22,9 +22,9 @@ export const Products = () => {
 	const navigate = useNavigate();
 	return (
 		<>
-			<div className='our-product-bg w-100'>
+			<div className='our-product-bg p-0' style={{ backgroundSize: "100% 100%" }}>
 				<div className='row mt-5' style={{ zIndex: 2 }}>
-					<section className='our-products'>
+					<section className='our-products' style={{ paddingBottom: "10rem" }}>
 						<div className='d-flex position-relative flex-column gap-5 justify-content-center align-items-center '>
 							<h1 className='text-light page-title'>OUR PRODUCT</h1>
 							<div

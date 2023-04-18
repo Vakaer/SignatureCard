@@ -1,6 +1,9 @@
-.competence-process {
-    margin-top: 10rem;
+.competence-process-bg {
     color: white;
+    background: url('../../assets/videos/competence-bg.gif');
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+    background-size: cover;
 }
 
 .createCardButton {

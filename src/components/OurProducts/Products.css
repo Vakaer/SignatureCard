@@ -2,8 +2,6 @@
     background: url('../../assets/videos/our-product-bg.gif');
     background-repeat: no-repeat;
     mix-blend-mode: screen;
-    background-size: cover;
-    z-index: 1;
 }
 
 .credit-card {
