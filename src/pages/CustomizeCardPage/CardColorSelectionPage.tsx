@@ -5,7 +5,7 @@ import BorderOne from "../../assets/cards/CardColorSelectionPage/Borders/border-
 import LogoForPinkcard from "../../assets/cards/CardColorSelectionPage/CardLogo/logo-card-1.png";
 import bgBlack from "../../assets/cards/CardColorSelectionPage/background/bg-shiny-black.png";
 import "../CustomizeCardPage/CardColorSelectionPage.css";
-import { CardBgImageData, CardColorsData } from "./data/data";
+import { CardBgImageData, CardColorsData, CardlogoData } from "./data/data";
 
 export const CardColorSelection = () => {
 	const [Index, setIndex] = useState(0);
@@ -13,7 +13,12 @@ export const CardColorSelection = () => {
 	const [bg, setBg] = useState<any>([]);
 	const [border, setBorder] = useState(BorderOne);
 	const [chip, setChip] = useState(chiplight);
-	console.log(chip);
+	const [cardLogo, setCardLogo] = useState();
+	const [showCardLogo, setShowCardLogo] = useState(false);
+
+	const handleCustomDesign = () => {
+		setShowCardLogo(!showCardLogo);
+	};
 	useEffect(() => {
 		const newvalue = cardBackground.filter((value, index) => {
 			return index === Index;
@@ -40,8 +45,47 @@ export const CardColorSelection = () => {
 						className='d-flex col-lg-10 m-auto align-items-end  justify-content-center flex-row'
 						style={{ zIndex: "2" }}
 					>
-						<div className='col-lg-2 d-flex justify-content-center'>
-							<button className='selection-btn'>Custom Design</button>
+						<div className='col-lg-2 d-flex flex-column justify-content-center gap-3'>
+							{showCardLogo && (
+								<div
+									style={{
+										width: "150px",
+										height: "350px",
+										overflowY: "scroll",
+										mixBlendMode: "soft-light",
+										backgroundColor: "#fff",
+										borderRadius: "20px",
+									}}
+									className='d-flex flex-column gap-1'
+								>
+									{CardlogoData.map((value: any, index: number) => {
+										const { id, logo } = value;
+										return (
+											<div
+												key={id}
+												style={{
+													width: "130px",
+													height: "80px",
+													margin: "auto",
+													borderRadius: "20px",
+												}}
+												className='pt-2'
+											>
+												<img
+													src={logo}
+													style={{ width: "100%", height: "100%", mixBlendMode: "plus-lighter" }}
+													className='p-1'
+												/>
+											</div>
+										);
+									})}
+								</div>
+							)}
+							<div>
+								<button className='selection-btn' onClick={handleCustomDesign}>
+									Custom Design
+								</button>
+							</div>
 						</div>
 
 						<div className='col-lg-8 d-flex flex-column gap-5 '>
@@ -60,7 +104,7 @@ export const CardColorSelection = () => {
 												style={{ top: "2rem", left: "2rem", height: "86%" }}
 											/>
 											<img
-												src={LogoForPinkcard}
+												src={cardLogo}
 												className='position-absolute'
 												style={{
 													top: "2rem",

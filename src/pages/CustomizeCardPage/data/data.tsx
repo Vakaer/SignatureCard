@@ -25,11 +25,11 @@ const DEEP_GREEN = "#144F53";
 const SHINY_BLUE = "#0096FF";
 const SEA_BLUE = "#003C5F";
 
-export interface ICardColorsData{
-	id:number,
-	color: string,
-	name:string,
-	background: string
+export interface ICardColorsData {
+	id: number;
+	color: string;
+	name: string;
+	background: string;
 }
 
 export const CardColorsData: ICardColorsData[] = [
@@ -94,6 +94,32 @@ export const CardBgImageData: { id: number; background: string }[] = [
 	{
 		id: 6,
 		background: bgSeaBlue,
+	},
+];
+export const CardlogoData: { id: number; logo: string }[] = [
+	{
+		id: 1,
+		logo: logoOne,
+	},
+	{
+		id: 2,
+		logo: logoTwo,
+	},
+	{
+		id: 3,
+		logo: logoThree,
+	},
+	{
+		id: 4,
+		logo: logoFour,
+	},
+	{
+		id: 5,
+		logo: logoFive,
+	},
+	{
+		id: 6,
+		logo: logoSix,
 	},
 ];
 export const CardBorderData: { id: number; border: string }[] = [

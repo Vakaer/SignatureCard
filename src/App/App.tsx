@@ -8,7 +8,6 @@ import { Footer } from "../components/Footer/Footer";
 import { Route, Router, Routes, useLocation } from "react-router-dom";
 import { ProductsPage } from "../pages/ProductPage/ProductsPage";
 import { CardColorSelection } from "../pages/CustomizeCardPage/CardColorSelectionPage";
-
 function App() {
 	const location = useLocation();
 	const pathname = location.pathname;
