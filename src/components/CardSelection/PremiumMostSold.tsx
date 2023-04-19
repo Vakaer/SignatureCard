@@ -12,9 +12,45 @@ interface CardProps {}
 export const PremiumMostSold = () => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [oldIndex, setOldIndex] = useState(0);
-	const [selectedCard, setSelectedCard] = useState<any>();
-	const [cardImage, setCardImage] = useState(CardData);
+	const [selectedCard, setSelectedCard] = useState();
+	const [cardImage, setCardImage] = useState<{ id: number; image: string }[]>(CardData);
 
+	useEffect(() => {}, [cardImage]);
+
+	function MoveArray(id: number) {
+		//setSelectedCard(cardImage.filter((card) => card.id === id));
+		const arr: { id: number; image: string }[] = [...cardImage];
+
+		// Position where from the element is
+		// going to move here 'python' is moved
+		var x = id - 1;
+
+		// Position at which element is to be
+		// moved here 'python' is moved to
+		// index 1 which is index of 'Java'
+		var pos = 0;
+
+		// Store the moved element in a temp
+		// variable
+		var temp = arr[x];
+		console.log("temp: ", temp);
+		// shift elements forward
+		var i;
+		for (i = x; i >= pos; i--) {
+			arr[i] = arr[i - 1];
+		}
+
+		// Insert moved element at position
+		arr[pos] = temp;
+		// console.log(
+		// 	"After move: " +
+		// 		arr.map((item) => {
+		// 			console.log(item);
+		// 		})
+		// );
+		setCardImage(arr);
+	}
+	console.log("test", cardImage);
 	function next(arr: { id: number; image: string }[], index: number) {
 		setCurrentIndex(currentIndex + 1);
 		move(arr, 0, currentIndex);
@@ -46,18 +82,6 @@ export const PremiumMostSold = () => {
 		arr.splice(new_index, 0, arr.splice(oldIndex, 1)[0]);
 		return arr;
 	}
-
-	function MoveArray(id: number) {
-		console.log(id);
-		const card = cardImage.filter((card) => card.id === id);
-		setCardImage(card);
-		const newArray = cardImage.slice(0, cardImage.length);
-		console.log(newArray);
-		card.map((item) => {
-			newArray.unshift(item);
-		});
-	}
-
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -119,6 +143,7 @@ export const PremiumMostSold = () => {
 							>
 								{cardImage.map((value: any, index: number) => {
 									const { id, image } = value;
+									console.log("id and img", id, image);
 									if (index < 5) {
 										if (index === 0) {
 											return (
@@ -128,7 +153,7 @@ export const PremiumMostSold = () => {
 															backgroundColor: "#8080808c",
 														}}
 													>
-														<img key={id} src={image} onClick={() => MoveArray(id)} />
+														<img key={id} src={image} />
 													</div>
 												</div>
 											);
