@@ -17,6 +17,7 @@ import iconAdd from "../../assets/icons/ic-white-add.svg";
 import iconLocation from "../../assets/icons/ic-white-location.svg";
 import { ProductCard } from "../ui/ProductCard/ProductCard";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Navabar";
 
 export const Products = () => {
 	const navigate = useNavigate();
