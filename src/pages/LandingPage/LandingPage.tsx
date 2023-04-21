@@ -10,7 +10,7 @@ import { ClientsRecomendations } from "../../components/ClientsRecommendations/C
 import { Footer } from "../../components/Footer/Footer";
 export const LandingPage = () => {
 	return (
-		<div className='container-fluid background-image'>
+		<div className='container-fluid '>
 			<LandingVideoPage />
 			<About />
 			<Products />

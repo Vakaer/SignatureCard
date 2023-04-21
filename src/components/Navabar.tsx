@@ -27,7 +27,7 @@ function Navbar(props: NavbarProps) {
 	};
 	useEffect(() => {});
 	return (
-		<nav className='navbar-bg'>
+		<nav>
 			<div className='row col-12 justify-content-between position-relative margin'>
 				<div className='col-3 d-inline mt-md-4 text-center'>
 					<ProductButton style={{ color: "white" }}>

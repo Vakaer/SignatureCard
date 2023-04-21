@@ -8,6 +8,7 @@ import { Footer } from "../components/Footer/Footer";
 import { Route, Router, Routes, useLocation } from "react-router-dom";
 import { ProductsPage } from "../pages/ProductPage/ProductsPage";
 import { CardColorSelection } from "../pages/CustomizeCardPage/CardColorSelectionPage";
+import { BehindTheScenes } from "../pages/BehindTheScenes/BehindTheScenes";
 function App() {
 	const location = useLocation();
 	const pathname = location.pathname;
@@ -33,13 +34,16 @@ function App() {
 	}, [pathname]);
 	return (
 		<>
-			{menuIsShown && <Menu onClick={hideMenuHandler} />}
-			{isCustomizeCardPage && <Navbar showMenuHandler={showMenuHandler} />}
-			<Routes>
-				<Route path='/' element={<LandingPage />} />
-				<Route path='/products' element={<ProductsPage />} />
-				<Route path='/customize-card' element={<CardColorSelection />} />
-			</Routes>
+			<div className='background-image'>
+				{menuIsShown && <Menu onClick={hideMenuHandler} />}
+				{isCustomizeCardPage && <Navbar showMenuHandler={showMenuHandler} />}
+				<Routes>
+					<Route path='/' element={<LandingPage />} />
+					<Route path='/products' element={<ProductsPage />} />
+					<Route path='/customize-card' element={<CardColorSelection />} />
+					<Route path='./behindTheScenes' element={<BehindTheScenes />} />
+				</Routes>
+			</div>
 		</>
 	);
 }
