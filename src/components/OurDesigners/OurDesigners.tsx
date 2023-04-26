@@ -8,6 +8,7 @@ import next from "../../assets/icons/ic-next.svg";
 
 export const OurDesigners = () => {
 	const [animation, setAnimation] = useState(false);
+	const [playState, setPlayState] = useState('running')
 	const animate = () => {
 		setAnimation(true);
 		setTimeout(() => setAnimation(false), 2000);
@@ -19,12 +20,12 @@ export const OurDesigners = () => {
 					<div className='mt-5'>
 						<h2 className='text-center text-light'>OUR DESIGNERS</h2>
 						<div
-							className='d-flex justify-content-center  gap-1 align-items-center'
+							className='d-flex justify-content-center  gap-5 align-items-center'
 							style={{ marginTop: "7rem" }}
 						>
 							<img src={Prev} className='icons' />
-							<div className='d-flex align-items-center flex-column'>
-								<img src={redCard} className={`w-75 ${animation ? "card-1" : null}`} />
+							<div className={` d-flex align-items-center flex-column ${animation ? "card-1" : null}`} >
+								<img src={redCard} style={{ height: '100%', width: '100%' }} />
 								<div className='mt-4 text-light text-center lh-1'>
 									<p>CARD NAME</p>
 									<p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -34,8 +35,8 @@ export const OurDesigners = () => {
 							<div>
 								<img src={client} style={{ height: "350px", width: "350px" }} />
 							</div>
-							<div className='d-flex align-items-center flex-column'>
-								<img src={zincCard} className={`w-75 ${animation ? "card-2" : null}`} />
+							<div className={`d-flex align-items-center flex-column ${animation ? "card-2" : null}`}>
+								<img src={zincCard} />
 								<div className='mt-4 text-light text-center lh-1'>
 									<p>CARD NAME</p>
 									<p>Lorem ipsum dolor sit amet, consectetur</p>

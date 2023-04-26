@@ -8,8 +8,15 @@
 }
 
 .card-1 {
-    animation: 2s takeoff infinite linear;
-    transition-delay: 0s;
+    animation: 10s takeoff 1 linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+
+}
+
+.paused {
+    animation-play-state: paused;
 }
 
 .card-2 {
@@ -23,19 +30,19 @@
     }
 
     25% {
-        transform: scale(1.2) translateX(112px);
+        transform: scale(1.2) translateX(25vh);
     }
 
     50% {
-        transform: scale(1.3) translateX(224px);
+        transform: scale(1.3) translateX(50vh);
     }
 
     75% {
-        transform: scale(1.2) translateX(336px);
+        transform: scale(1.2) translateX(75%);
     }
 
     100% {
-        transform: scale(1) translateX(450px)
+        transform: scale(1) translateX(150%)
     }
 }
 
@@ -45,18 +52,18 @@
     }
 
     25% {
-        transform: scale(1.2) translateX(-112px);
+        transform: scale(1.2) translateX(-25%);
     }
 
     50% {
-        transform: scale(1.3) translateX(-224px);
+        transform: scale(1.3) translateX(-50%);
     }
 
     75% {
-        transform: scale(1.2) translateX(-336px);
+        transform: scale(1.2) translateX(-75%);
     }
 
     100% {
-        transform: scale(1) translateX(-450px)
+        transform: scale(1) translateX(-100%)
     }
 }
