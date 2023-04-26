@@ -26,7 +26,7 @@ export const ProductsPage = () => {
 								</p>
 							</div>
 						</div>
-						<div className='col-11 d-flex products flex-sm-column flex-lg-row justify-content-between flex-row gap-lg-2 gap-md-5 m-auto flex-lg-wrap'>
+						<div className='col-11 d-flex products flex-sm-column flex-lg-row justify-content-between flex-row gap-lg-2 gap-md-5 m-auto flex-lg-wrap' >
 							<Product />
 						</div>
 						<div className='text-center'>

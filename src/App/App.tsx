@@ -41,7 +41,7 @@ function App() {
 					<Route path='/' element={<LandingPage />} />
 					<Route path='/products' element={<ProductsPage />} />
 					<Route path='/customize-card' element={<CardColorSelection />} />
-					<Route path='./behindTheScenes' element={<BehindTheScenes />} />
+					<Route path='/behindTheScenes' element={<BehindTheScenes />} />
 				</Routes>
 			</div>
 		</>

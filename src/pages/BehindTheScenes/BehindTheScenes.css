@@ -1,0 +1,9 @@
+.tiktok-btn {
+    display: inline;
+
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 0.5rem 0 0.5rem 0;
+}

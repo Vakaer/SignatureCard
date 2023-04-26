@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     mix-blend-mode: screen;
     background-size: cover;
+    padding-bottom: 15rem;
 }
 
 .createCardButton {

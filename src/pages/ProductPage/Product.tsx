@@ -12,7 +12,7 @@ export const Product = () => {
 				console.log(value);
 				return (
 					<>
-						<div key={id} className='pb-5 '>
+						<div key={id} className='pb-5 ' data-aos='slide-right'>
 							<div className='card-dimensions'>
 								<img src={image} />
 							</div>
@@ -37,7 +37,7 @@ export const BestProducts = () => {
 				if (index < 6) {
 					return (
 						<>
-							<div key={id} className='pb-5'>
+							<div key={id} className='pb-5 ' data-aos='slide-right'>
 								<div className='card-dimensions'>
 									<img src={image} />
 								</div>

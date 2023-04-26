@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../OurProducts/Products.css";
 import ProductButton from "../ui/ProductButton";
 import pinkcard from "../../assets/cards/card-pink.png";
@@ -19,8 +19,12 @@ import { ProductCard } from "../ui/ProductCard/ProductCard";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Navabar";
 
+
 export const Products = () => {
 	const navigate = useNavigate();
+	useEffect(() => {
+
+	})
 	return (
 		<>
 			<div className='our-product-bg p-0' style={{ backgroundSize: "100% 100%" }}>
@@ -33,6 +37,7 @@ export const Products = () => {
 								style={{ width: "60%" }}
 							>
 								<ProductCard
+
 									onClick={() => navigate("/customize-card")}
 									cardImage={pinkcard}
 									cardNameFirst='SIGNATURE'
@@ -55,6 +60,7 @@ export const Products = () => {
 						</div>
 						<div className='text-center ' style={{ marginTop: "5rem" }}>
 							<button
+								data-aos="fade-up"
 								style={{
 									backgroundColor: "#144F53",
 									borderRadius: "25px",

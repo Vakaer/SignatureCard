@@ -8,14 +8,14 @@ import nextIcon from "../../assets/icons/ic-next.svg";
 import prevIcon from "../../assets/icons/ic-next.svg";
 import Slider from "react-slick";
 
-interface CardProps {}
+interface CardProps { }
 export const PremiumMostSold = () => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [oldIndex, setOldIndex] = useState(0);
 	const [selectedCard, setSelectedCard] = useState();
 	const [cardImage, setCardImage] = useState<{ id: number; image: string }[]>(CardData);
 
-	useEffect(() => {}, [cardImage]);
+	useEffect(() => { }, [cardImage]);
 
 	function MoveArray(id: number) {
 		//setSelectedCard(cardImage.filter((card) => card.id === id));
@@ -91,10 +91,10 @@ export const PremiumMostSold = () => {
 	};
 	return (
 		<>
-			<section className='premium-most-sold position-relative'>
+			<section className='premium-most-sold position-relative negative-margin'>
 				<div className='row'>
 					<div className='mt-5 mb-5'>
-						<h2 className='text-center text-light' style={{ fontFamily: "HavleticaNowText" }}>
+						<h2 className='text-center text-light' style={{ fontFamily: "NeueMontrealRegular", letterSpacing: '2px' }}>
 							PREMIUM MOST SOLD
 						</h2>
 						<div className='col-7 ms-auto me-auto mt-5 mb-5 '>
@@ -126,7 +126,7 @@ export const PremiumMostSold = () => {
 										style={{ overflow: "hidden" }}
 									>
 										<Slider {...settings}>
-											<div className='d-flex flex-row gap-2'>
+											<div className='d-flex flex-row gap-2' >
 												{cardImage.map((value: any, index: number) => {
 													const { id, image } = value;
 

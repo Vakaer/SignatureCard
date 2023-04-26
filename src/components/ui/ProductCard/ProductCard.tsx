@@ -32,7 +32,7 @@ export const ProductCard = (
 ) => {
 	return (
 		<>
-			<div className='credit-card m-auto credit-card-inner ' onClick={onClick}>
+			<div className='credit-card m-auto credit-card-inner ' data-aos="zoom-in-left" data-aos-duration="500" onClick={onClick}>
 				<div className={className}>
 					<img src={cardImage} style={{ width: "100%", height: "100%" }} />
 				</div>

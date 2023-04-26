@@ -16,12 +16,13 @@ export const Competence = () => {
 					>
 						<h1
 							className='text-center'
+							data-aos="fade-right"
 							style={{ fontSize: "80px", fontFamily: "NeueMontrealRegular", fontWeight: "400" }}
 						>
 							Patented, Secure And Simple Process
 						</h1>
-						<div className='d-flex col-12 flex-wrap flex-row'>
-							<div className='ps-5 col-12 col-md-6 col-lg-3 pe-5 text-center'>
+						<div className='d-flex col-12 flex-wrap flex-row' >
+							<div className='ps-5 col-12 col-md-6 col-lg-3 pe-5 text-center' data-aos="fade-down-right" data-aos-duration="500">
 								<img src={step1} className='mb-4' />
 								<h5 className='text-center'>
 									<span>1. </span> Create Your Card
@@ -31,7 +32,7 @@ export const Competence = () => {
 									securely online.
 								</p>
 							</div>
-							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center'>
+							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center' data-aos="fade-down-right" data-aos-duration="1000">
 								<img src={step2} className='mb-4' />
 								<h5 className='text-center'>
 									<span>2. </span>Send Your Card
@@ -41,7 +42,7 @@ export const Competence = () => {
 									2 - 3 days
 								</p>
 							</div>
-							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center'>
+							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center' data-aos="fade-down-right" data-aos-duration="1500">
 								<img src={step3} className='mb-4' />
 								<h5 className='text-center'>
 									<span>3. </span> Transfer Data & EMV
@@ -51,7 +52,7 @@ export const Competence = () => {
 									credit card.
 								</p>
 							</div>
-							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center'>
+							<div className='ps-5 pe-5 col-12 col-md-6 col-lg-3 text-center' data-aos="fade-down-right" data-aos-duration="2000">
 								<img src={step4} className='mb-4' />
 								<h5 className='text-center'>
 									<span>4. </span>Receive Your Card
@@ -62,7 +63,7 @@ export const Competence = () => {
 								</p>
 							</div>
 						</div>
-						<button className='createCardButton'>Create Your Card now</button>
+						<button className='createCardButton' data-aos="fade-up">Create Your Card now</button>
 					</div>
 				</div>
 			</section>

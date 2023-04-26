@@ -4,6 +4,13 @@
     height: 20vh;
 }
 
+.clients-reccommendation {
+    background: url('../../assets/videos/recommendation.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: screen;
+}
+
 .margin-clients {
     margin: 7rem auto auto auto;
 }
