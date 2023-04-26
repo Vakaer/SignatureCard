@@ -19,8 +19,18 @@ ul li {
 
 .hr {
     border: 1px solid white;
+    opacity: 0.5;
+    width: 75%;
 }
 
 ul {
     padding: 0;
+}
+
+.bgBlack {
+    background-color: #000;
+}
+
+.bgNone {
+    background-color: transparent;
 }

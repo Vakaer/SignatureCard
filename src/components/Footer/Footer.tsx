@@ -2,11 +2,17 @@ import React from "react";
 import "../Footer/Footer.css";
 import iconLanguage from "../../assets/icons/ic-language.svg";
 import iconArrow from "../../assets/icons/ic-arrow-down.svg";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const Footer = () => {
+	const location = useLocation();
+	const pathname = location.pathname;
+	console.log("behind: ", pathname)
+
+
 	return (
 		<>
-			<section className='footer'>
+			<section className={`${pathname === "/behindTheScenes" ? "bgBlack" : "bgNone"}`} style={{ paddingBottom: '5rem' }}>
 				<div className='row'>
 					<div className='col-12 mt-5 '>
 						<div
@@ -89,9 +95,11 @@ export const Footer = () => {
 								</ul>
 							</div>
 						</div>
+						<hr className="hr w-100" />
 					</div>
 				</div>
 			</section>
+
 		</>
 	);
 };
