@@ -18,6 +18,7 @@ import iconLocation from "../../assets/icons/ic-white-location.svg";
 import { ProductCard } from "../ui/ProductCard/ProductCard";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Navabar";
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 
 export const Products = () => {
@@ -25,9 +26,11 @@ export const Products = () => {
 	useEffect(() => {
 
 	})
+	let { scrollYProgress } = useScroll();
+	let y = useTransform(scrollYProgress, [0, 1], ['0%', '10%'])
 	return (
 		<>
-			<div className='our-product-bg p-0' style={{ backgroundSize: "100% 100%" }}>
+			<motion.div className='our-product-bg p-0' style={{ y, backgroundSize: "100% 100%" }}>
 				<div className='row mt-5' style={{ zIndex: 2 }}>
 					<section className='our-products' style={{ paddingBottom: "10rem" }}>
 						<div className='d-flex position-relative flex-column gap-5 justify-content-center align-items-center '>
@@ -76,7 +79,7 @@ export const Products = () => {
 						</div>
 					</section>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };
