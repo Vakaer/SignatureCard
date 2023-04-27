@@ -6,17 +6,20 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { SubscribeSave } from "../forms/SubscribeSave";
 import ProductButton from "../ui/ProductButton";
 import { Link } from "react-router-dom";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export const LandingVideoPage = () => {
 	const [formIsVisible, setFormIsVisible] = useState(true);
 	const hideFormHandler = () => {
 		setFormIsVisible(false);
 	};
+	// let { scrollY } = useScroll();
+	// let y = useTransform(scrollY, [0, 1], ['0%', '100%'])
 	return (
 		<>
 			<div className='row'>
 				<div className='col-12'>
-					<div className='video-background'>
+					<motion.div className='video-background'>
 						<div
 							className='d-flex justify-content-center flex-column'
 							style={{ marginTop: "8rem" }}
@@ -50,7 +53,7 @@ export const LandingVideoPage = () => {
 								</ProductButton>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</>
