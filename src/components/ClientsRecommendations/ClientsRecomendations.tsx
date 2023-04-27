@@ -23,35 +23,35 @@ export const ClientsRecomendations = () => {
 								className='d-flex flex-row text-light ms-auto me-auto flex-wrap justify-content-around w-75'
 								style={{ marginTop: "7rem" }}
 							>
-								<div className='d-flex flex-column'>
+								<div className='d-flex flex-column' data-aos='fade-right' data-aos-duration='500'>
 									<div className='text-center lh-1'>
 										<img src={client} className='border-radius-50' />
 										<h5 className='mt-3'>Client Name</h5>
 										<p>Lorem ipsum</p>
 									</div>
 								</div>
-								<div className='d-flex flex-column'>
+								<div className='d-flex flex-column' data-aos='fade-right' data-aos-duration='1000'>
 									<div className='text-center lh-1'>
 										<img src={client} className='border-radius-50' />
 										<h5 className='mt-3'>Client Name</h5>
 										<p>Lorem ipsum</p>
 									</div>
 								</div>
-								<div className='d-flex flex-column'>
+								<div className='d-flex flex-column' data-aos='fade-right' data-aos-duration='1500'>
 									<div className='text-center lh-1'>
 										<img src={client} className='border-radius-50' />
 										<h5 className='mt-3'>Client Name</h5>
 										<p>Lorem ipsum</p>
 									</div>
 								</div>
-								<div className='d-flex flex-column'>
+								<div className='d-flex flex-column' data-aos='fade-right' data-aos-duration='2000'>
 									<div className='text-center lh-1'>
 										<img src={client} className='border-radius-50' />
 										<h5 className='mt-3'>Client Name</h5>
 										<p>Lorem ipsum</p>
 									</div>
 								</div>
-								<div className='d-flex flex-column'>
+								<div className='d-flex flex-column' data-aos='fade-right' data-aos-duration='2500'>
 									<div className='text-center lh-1'>
 										<img src={client} className='border-radius-50' />
 										<h5 className='mt-3'>Client Name</h5>
@@ -63,7 +63,7 @@ export const ClientsRecomendations = () => {
 								<div className='Clients  d-flex flex-row align-items-center'>
 									<h4 className='rotation'>Clients</h4>
 									{/* <div className='border-left ms-3'></div> */}
-									<div className='d-flex flex-wrap justify-content-around flex-row gap-2'>
+									<div className='d-flex flex-wrap justify-content-around flex-row gap-2' data-aos='fade-up' data-aos-duration='500'>
 										<img src={logo1} className='blend-mode' />
 										<img src={logo2} className='blend-mode' />
 										<img src={logo3} className='blend-mode' />
@@ -81,7 +81,7 @@ export const ClientsRecomendations = () => {
 								<div className='Brands mt-5 d-flex  flex-row align-items-center'>
 									<h4 className='rotation'>Brands</h4>
 									{/* <div className='border-left ms-3'></div> */}
-									<div className='d-flex flex-row justify-content-around flex-wrap  gap-2'>
+									<div className='d-flex flex-row justify-content-around flex-wrap  gap-2' data-aos='fade-down' data-aos-duration='500'>
 										<img src={logo1} className='blend-mode' />
 										<img src={logo2} className='blend-mode' />
 										<img src={logo3} className='blend-mode' />

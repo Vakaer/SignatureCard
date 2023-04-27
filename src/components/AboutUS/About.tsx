@@ -6,15 +6,19 @@ import cardBack from "../../assets/pages-images/about/about-us-card-back.png";
 import iconHandshake from "../../assets/icons/ic_handshake.png";
 import iconShield from "../../assets/icons/ic_shield.png";
 import iconStar from "../../assets/icons/ic-star.png";
+import { motion, useScroll, useTransform } from 'framer-motion'
 export const About = () => {
+	let { scrollYProgress } = useScroll();
+	let y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
+	let z = useTransform(scrollYProgress, [0, 1], ['0%', '-50%'])
 	return (
 		<>
 			<div className='row '>
 				<section className='about-us p-0'>
 					<div className='d-flex justify-content-between p-sm-2 col-12  flex-row align-items-center '>
-						<div
+						<motion.div
 							className='text-center col-5 text-md-center  text-lg-end ps-lg-5 pe-lg-5 col-lg-3 '
-							style={{ color: "white" }}
+							style={{ color: 'white' }}
 							data-aos="fade-right"
 						>
 							<h1>About Us</h1>
@@ -25,14 +29,14 @@ export const About = () => {
 								designs and styles.
 							</p>
 							<button className='learn-more-btn '>Learn More</button>
-						</div>
-						<div className='cloudy-img'>
-							<img src={cloudyImage} style={{ mixBlendMode: "screen" }} data-aos="fade-down" />
-						</div>
-						<div className='cards col-5 col-lg-3 d-inline' data-aos="fade-left">
+						</motion.div>
+						<motion.div style={{ y, mixBlendMode: 'screen' }} data-aos="fade-down" className='cloudy-img'>
+							<img src={cloudyImage} />
+						</motion.div>
+						<motion.div className='cards col-5 col-lg-3 d-inline' data-aos="fade-left" style={{ z }}>
 							<img src={cardFront} className='cardFront' />
 							<img src={cardBack} className='cardBack' />
-						</div>
+						</motion.div>
 					</div>
 					<div
 						className='m-0 d-flex flex-row justify-content-around flex-wrap align-content-md-center'
