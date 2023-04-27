@@ -1,0 +1,44 @@
+.login-bg {
+    background-image: url("../../assets/videos/world-transparent.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.transparent-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(126px);
+    border-radius: 46px;
+    height: 600px;
+}
+
+.border-box {
+    height: 600px;
+    border: 1px solid #144F53;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 46px;
+    height: 600px;
+}
+
+.border-box img {
+    background-size: cover;
+    height: 60%;
+}
+
+.tabbed-buttons {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 48px;
+}
+
+
+
+.btn {
+    /* background: #144F53; */
+    border-radius: 44px;
+    color: white;
+    border: none;
+    padding: 1.5rem 2rem;
+}

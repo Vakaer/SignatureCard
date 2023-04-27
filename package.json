@@ -13,6 +13,7 @@
     "@types/slick-carousel": "^1.6.37",
     "@types/video-react": "^0.15.1",
     "bootstrap": "^5.2.3",
+    "framer-motion": "^10.12.4",
     "jquery": "^3.6.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

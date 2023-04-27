@@ -9,11 +9,13 @@ import { Route, Router, Routes, useLocation } from "react-router-dom";
 import { ProductsPage } from "../pages/ProductPage/ProductsPage";
 import { CardColorSelection } from "../pages/CustomizeCardPage/CardColorSelectionPage";
 import { BehindTheScenes } from "../pages/BehindTheScenes/BehindTheScenes";
+import { Login } from "../components/Login/Login";
 function App() {
 	const location = useLocation();
 	const pathname = location.pathname;
 	const [menuIsShown, setMenuIsShown] = useState(false);
 	const [isCustomizeCardPage, setIsCustomizeCardPage] = useState(true);
+
 	console.log(isCustomizeCardPage);
 	const showMenuHandler = () => {
 		setMenuIsShown(!menuIsShown);
@@ -26,7 +28,7 @@ function App() {
 	};
 	useEffect(() => {
 		console.log(pathname);
-		if (pathname === "/customize-card") {
+		if (pathname === "/customize-card" || pathname === "/login") {
 			setIsCustomizeCardPage(false);
 		} else {
 			setIsCustomizeCardPage(true);
@@ -42,6 +44,7 @@ function App() {
 					<Route path='/products' element={<ProductsPage />} />
 					<Route path='/customize-card' element={<CardColorSelection />} />
 					<Route path='/behindTheScenes' element={<BehindTheScenes />} />
+					<Route path="/login" element={<Login />} />
 				</Routes>
 			</div>
 		</>
