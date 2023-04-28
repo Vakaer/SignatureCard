@@ -35,10 +35,36 @@
 
 
 
-.btn {
-    /* background: #144F53; */
+.btn-login {
+    background-color: transparent;
     border-radius: 44px;
     color: white;
     border: none;
+
+}
+
+.bg-green {
+    background: #144F53 !important;
+}
+
+.py-px-2-2 {
     padding: 1.5rem 2rem;
+}
+
+.py-px-2-4 {
+    padding: 1.5rem 4rem;
+}
+
+
+.custom-input {
+    background-color: transparent;
+    border-radius: 48px;
+    padding: 1.5rem;
+}
+
+.custom-input:focus {
+    background-color: transparent;
+    outline: 0 none;
+    box-shadow: none;
+    color: white;
 }
