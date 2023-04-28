@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../forms/SubscribeSave.css";
 import icClose from "./../../assets/icons/ic-close-form.svg";
+import { GrFormClose } from 'react-icons/gr'
 
 type SubscribeSaveProps = {
 	onClick: () => void;
@@ -16,7 +17,10 @@ export const SubscribeSave = (props: SubscribeSaveProps) => {
 		<>
 			<div className='col-md-8 col-lg-4 col-11 form' data-aos='fade-down' data-aos-duration="500">
 				<div className='blurred-img'></div>
-				<img src={icClose} onClick={props.onClick} className='closeBtn' />
+				<div className=" closeBtn  btn btn-light rounded-circle">
+					<GrFormClose onClick={props.onClick} />
+				</div>
+
 				<div
 					style={{
 						position: "absolute",
