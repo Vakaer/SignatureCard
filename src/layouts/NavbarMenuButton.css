@@ -1,0 +1,14 @@
+.hamburger-menu {
+
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.hamburger-menu:hover {
+    background-color: #FAAFEE;
+}
