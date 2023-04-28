@@ -9,6 +9,9 @@ import icSearch from "../assets/icons/ic-search.svg";
 import NavbarMenuButton, { MenuProps } from "../layouts/NavbarMenuButton";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Logo } from "./AnimatedLogo/Logo";
+import { FaShoppingCart } from 'react-icons/fa'
+import { HiShoppingCart } from 'react-icons/hi'
+import { BiSearch } from 'react-icons/bi'
 
 interface NavbarProps {
 	showMenuHandler: () => void;
@@ -39,14 +42,16 @@ function Navbar(props: NavbarProps) {
 				<div className='col-6 flex-grow-1 d-inline text-center'>
 					<Logo />
 				</div>
-				<div className='col-3 d-flex flex-row justify-content-center mt-md-4 text-center'>
+				<div className='col-3 d-flex flex-row justify-content-center mt-md-4 text-center align-items-center'>
 					<div className='d-inline '>
-						<img src={icSearch} height='20px' style={{ marginRight: "5px" }} width='20px' />
+						<BiSearch className="text-light" style={{
+							height: '30px', width: '30px'
+						}} />
 						<input className='navInput' placeholder='search' />
 					</div>
 					<Link style={{ marginRight: '1rem' }} to={'./login'}>Login</Link>
 					<NavbarMenuButton onClick={props.showMenuHandler} />
-					<img src={icCart} className='text-center icons ms-2' alt='Signature Logo' />
+					<HiShoppingCart className='text-center text-light cart icons ms-2' />
 				</div>
 			</div>
 		</nav>

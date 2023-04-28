@@ -38,6 +38,10 @@ a {
     background-color: black;
 }
 
+.cart {
+    font-size: 20px;
+}
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
 
     /* Styles for screens with a minimum width of 576 pixels and a maximum width of 768 pixels go here */
@@ -59,8 +63,8 @@ a {
     }
 
     .icons {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 }
 
