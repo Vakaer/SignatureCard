@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from "react";
 import "../Home/LandingVideoPage.css";
-import Menu from "../Menu/Menu";
-import Navbar from "../Navabar";
+import particles from '../../assets/videos/particles.gif'
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { SubscribeSave } from "../forms/SubscribeSave";
 import ProductButton from "../ui/ProductButton";
@@ -21,19 +20,28 @@ export const LandingVideoPage = () => {
 				<div className='col-12'>
 					<motion.div className='video-background'>
 						<div
-							className='d-flex justify-content-center flex-column'
+							className='d-flex justify-content-center flex-column '
 							style={{ marginTop: "8rem" }}
 						>
-							<h4 className='LandingPageHeading '>WHERE MONEY LIVES</h4>
 							{formIsVisible && <SubscribeSave onClick={hideFormHandler} />}
-							<h3
-								className='text-light'
-								data-aos="fade-right"
-								data-aos-duration="2000"
-								style={{ fontSize: "30px", fontFamily: "NeueMontrealRegular", marginLeft: "6rem", marginTop: '-2rem' }}
-							>
-								<Link to='/behindTheScenes'  >Behind the scenes</Link>
-							</h3>
+							<div className="d-flex flex-row justify-content-evenly align-items-center " style={{ marginTop: '16rem' }}>
+
+								<h3
+									className='text-light text-center'
+
+									data-aos="fade-right"
+									data-aos-duration="2000"
+									style={{ marginLeft: '-10rem', fontSize: "30px", fontFamily: "NeueMontrealRegular" }}
+								>
+									<Link to='/behindTheScenes'  >Behind the scenes</Link>
+								</h3>
+								<h4 className='LandingPageHeading'>WHERE MONEY LIVES</h4>
+
+								<div style={{ mixBlendMode: 'screen', height: '120px' }} >
+									<img src={particles} className="w-100 h-100" />
+								</div>
+
+							</div>
 							<div className='moving-border-bottom ' data-aos='fade-left' data-aos-duration="1000">
 								<button
 									className='discover-btn'
