@@ -1,3 +1,6 @@
+@import url(../components/theme/classic.css);
+@import url(../components/theme/funky.css);
+
 .navbar-bg {
     background-image: url("../assets/bg/bg.png");
     background-repeat: no-repeat;
@@ -9,21 +12,55 @@
 }
 
 ::placeholder {
-    color: white;
+    color: var(--color-blue);
 }
 
 .navInput {
     border: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--color-blue);
     outline: none;
     width: 80px;
 }
 
+.product-btn {
+    border: 1px solid var(--color-pink);
+}
+
+.product-btn:hover {
+    color: var(--color-blue);
+    background-color: transparent;
+    border: 2px solid var(--color-pink);
+}
+
+.product-btn:hover a {
+    color: var(--color-blue);
+}
+
+.play-btn {
+    color: var(--color-pink);
+    height: 35px;
+    width: 35px;
+
+}
+
+.play-btn:hover {
+    color: var(--color-pink);
+    height: 40px;
+    width: 40px;
+
+}
+
 a {
     text-decoration: none;
-    color: white;
+    color: var(--color-blue);
 }
+
+.search-icon svg {
+    color: var(--color-blue);
+}
+
+
 
 .nav-gradient {
     /* background: rgb(73, 63, 47);
@@ -40,6 +77,7 @@ a {
 
 .cart {
     font-size: 20px;
+    color: var(--color-yellow);
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {

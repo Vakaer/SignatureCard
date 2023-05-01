@@ -9,7 +9,7 @@ export const Product = () => {
 		<>
 			{product.map((value: any, index: number) => {
 				const { id, image, cardType, designerName } = value;
-				console.log(value);
+				// console.log(value);
 				return (
 					<>
 						<div key={id} className='pb-5 ' data-aos='slide-right'>

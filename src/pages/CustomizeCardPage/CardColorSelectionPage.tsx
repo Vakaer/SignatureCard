@@ -37,7 +37,7 @@ export const CardColorSelection = () => {
 			}
 		});
 		setBg(newvalue);
-		console.log(back);
+		// console.log(back);
 	}, [Index]);
 
 	const selectCardlogo = (id: number) => {
@@ -47,7 +47,7 @@ export const CardColorSelection = () => {
 	const selectCardBorder = (id: number) => {
 		const border = CardBorderData.find((item) => item.id === id);
 		setBorder(border);
-		console.log(border);
+		// console.log(border);
 	};
 	return (
 		<>

@@ -4,6 +4,7 @@ import "./model.css";
 
 interface BackDropProps {
 	onClose: () => void;
+
 }
 
 interface ModalOverLay {
@@ -13,9 +14,10 @@ interface ModalOverLay {
 interface ModalProps {
 	onClose: () => void;
 	children?: React.ReactNode;
+
 }
 const Backdrop = (props: BackDropProps) => {
-	console.log("Backdrop: ", props);
+	// console.log("Backdrop: ", props);
 	return <div className='backdrop' onClick={props.onClose}></div>;
 };
 

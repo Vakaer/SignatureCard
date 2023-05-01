@@ -19,6 +19,21 @@
 
 }
 
+.toggle-theme-button-wrapper {
+    border-radius: 44px;
+}
+
+.toggle-theme-button {
+    padding: 1rem;
+    border: none;
+    border-radius: 44px;
+
+}
+
+.bg-blue {
+    background-color: #144F53;
+    color: white;
+}
 
 h3 {
     font-family: 'HalveticaNowRegular';

@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 export const Footer = () => {
 	const location = useLocation();
 	const pathname = location.pathname;
-	console.log("behind: ", pathname)
+	// console.log("behind: ", pathname)
 
 
 	return (

@@ -11,6 +11,7 @@ import { Footer } from "../../components/Footer/Footer";
 export const LandingPage = () => {
 	return (
 		<div>
+
 			<LandingVideoPage />
 			<About />
 			<Products />

@@ -1,15 +1,11 @@
-import React, { useEffect } from "react";
-import logo from "../assets/signature-logo.svg";
+import React, { useEffect, useState } from "react";
 import icPlay from "../assets/icons/ic_play.svg";
 import "../components/Navbar.css";
 import ProductButton from "./ui/ProductButton";
-
-import icCart from "../assets/icons/ic-cart.svg";
-import icSearch from "../assets/icons/ic-search.svg";
-import NavbarMenuButton, { MenuProps } from "../layouts/NavbarMenuButton";
+import { FiPlay } from 'react-icons/fi'
+import NavbarMenuButton from "../layouts/NavbarMenuButton";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Logo } from "./AnimatedLogo/Logo";
-import { FaShoppingCart } from 'react-icons/fa'
 import { HiShoppingCart } from 'react-icons/hi'
 import { BiSearch } from 'react-icons/bi'
 
@@ -17,11 +13,12 @@ interface NavbarProps {
 	showMenuHandler: () => void;
 }
 
+
 function Navbar(props: NavbarProps) {
 	const navigate = useNavigate();
 	const location = useLocation();
 	const pathname = location.pathname;
-	console.log(pathname);
+	// console.log(pathname);
 
 	const blackbgStyle = {
 		backgroundColor: "#000",
@@ -29,32 +26,35 @@ function Navbar(props: NavbarProps) {
 	const transparentBgStyle = {
 		backgroundColor: "#000",
 	};
-	useEffect(() => { });
+
+
+
 	return (
-		<nav>
+		<nav className="navbar">
 			<div className='row col-12 justify-content-between position-relative margin'>
 				<div className='col-3 d-inline mt-md-4 text-center'>
-					<ProductButton style={{ color: "white" }}>
+					<ProductButton style={{ color: "white" }} className="product-btn">
 						<Link to='products'>Products</Link>
 					</ProductButton>
-					<img src={icPlay} className='ms-3' height='30px' width='30px' alt='Play button' />
+					<FiPlay className='ms-3 play-btn' />
 				</div>
 				<div className='col-6 flex-grow-1 d-inline text-center'>
 					<Logo />
 				</div>
 				<div className='col-3 d-flex flex-row justify-content-center mt-md-4 text-center align-items-center'>
-					<div className='d-inline '>
-						<BiSearch className="text-light" style={{
+					<div className='d-inline search-icon '>
+						<BiSearch style={{
 							height: '30px', width: '30px'
 						}} />
 						<input className='navInput' placeholder='search' />
 					</div>
 					<Link style={{ marginRight: '1rem' }} to={'./login'}>Login</Link>
 					<NavbarMenuButton onClick={props.showMenuHandler} />
-					<HiShoppingCart className='text-center text-light cart icons ms-2' />
+					<HiShoppingCart className='text-center  cart icons ms-2' />
 				</div>
 			</div>
 		</nav>
+
 	);
 }
 

@@ -1,3 +1,6 @@
+@import url(../components/theme/classic.css);
+@import url(../components/theme/funky.css);
+
 .hamburger-menu {
 
     height: 50px;
@@ -7,8 +10,9 @@
     justify-content: center;
     align-items: center;
     border: none;
+    background-color: var(--color-pink);
+
+
 }
 
-.hamburger-menu:hover {
-    background-color: #FAAFEE;
-}
+.hamburger-menu:hover {}

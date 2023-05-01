@@ -11,7 +11,7 @@ const ProductButton = ({ children, style, className, handleClick }: GenericButto
 	return (
 		<>
 			<button
-				className={`btn btn-outline-light  rounded-pill ${className}`}
+				className={`btn rounded-pill ${className}`}
 				data-aos="fade-up"
 				onClick={handleClick}
 				style={style}

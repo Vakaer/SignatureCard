@@ -1,0 +1,13 @@
+#classic-theme-navbar {
+
+    /* Classic theme Navbar */
+    --color-pink: #fff;
+    --color-blue: #fff;
+    --color-yellow: #fff;
+    --about-bg-color: none;
+    --about-card-front: url('../../assets/pages-images/about/about-us-card-front.png');
+    --about-card-back: url('../../assets/pages-images/about/about-us-card-back.png');
+    --about-bottom-process-bg: #FFFFFF1A;
+    --about-bottom-process-color: #fff;
+
+}

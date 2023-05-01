@@ -1,5 +1,9 @@
+@import url('../theme/classic.css');
+@import url('../theme/funky.css');
+
 .about-us {
     width: 100%;
+    background-color: var(--about-bg-color);
 }
 
 .about-us-desc {
@@ -18,6 +22,14 @@
 .cards img {
     width: 250px;
     height: 300px;
+}
+
+.cardFront {
+    content: var(--about-card-front);
+}
+
+.cardBack {
+    content: var(--about-card-back);
 }
 
 .cards .cardBack {
@@ -42,7 +54,7 @@
 }
 
 .learn-more-btn {
-    background-color: #144F53;
+    background-color: var(--color-pink);
     color: #fff;
     padding: 0.5rem 2rem;
     border: none;
@@ -55,6 +67,12 @@
     height: 20px;
 }
 
+.bottom-process {
+    background: var(--about-bottom-process-bg);
+    color: var(--about-bottom-process-color);
+    padding: 1rem;
+    backdrop-filter: (60px);
+}
 
 @media only screen and (max-width: 576px) {
 

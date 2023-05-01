@@ -1,0 +1,13 @@
+#funky-theme-navbar {
+
+    /* Navbar styling */
+
+    --color-pink: #FAAFEE;
+    --color-blue: #72DAFE;
+    --color-yellow: #F4FE81;
+    --about-bg-color: #69C9FF;
+    --about-card-front: url('../../assets/pages-images/about/funcky-about-card.png');
+    --about-card-back: url('../../assets/pages-images/about/funcky-about-card-back.png');
+    --about-bottom-process-bg: rgba(250, 175, 238, 0.44);
+    --about-bottom-process-color: #000;
+}

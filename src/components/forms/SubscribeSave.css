@@ -1,13 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --list_opacity: 0.2;
-
-}
+@import url('../theme/classic.css');
+@import url('../theme/funky.css');
 
 
 .form {
@@ -15,7 +7,7 @@
     height: 45vh;
     position: absolute;
     top: 35%;
-    left: 35%;
+    left: 33%;
     transform: translate(-50%, -35%);
     z-index: 30;
     padding: 1rem;
@@ -56,6 +48,7 @@
     padding: 10px;
     margin-right: auto;
     cursor: pointer;
+    background-color: var(--color-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,12 +56,25 @@
     border: none;
 }
 
+.icon-cross {
+    color: white;
+}
 
+.form-content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 30px;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
 
 
 .form-title {
     font-family: "HalveticaNowRegular";
-    color: #003C5F;
+    color: var(--color-pink);
 }
 
 .inputBox {
@@ -80,7 +86,7 @@
 
     margin: 0;
     padding: 4px;
-    border: 0.7px solid #fff;
+    border: 0.7px solid var(--color-blue);
     border-radius: 25px;
     background-color: transparent;
 }
@@ -88,7 +94,7 @@
 .inputBox span {
     position: absolute;
     left: 0;
-    color: #fff;
+    color: var(--color-blue);
     padding: 1em 2.5em;
     font-size: 0.6em;
     transition: 1ms;
@@ -97,7 +103,7 @@
 
 .inputBox input:valid~span,
 .inputBox input:focus~span {
-    color: white;
+    color: var(--color-blue);
     background: #13171d;
     transform: translateX(2em) translateY(-0.5em);
     padding: 0 10px;
@@ -108,11 +114,17 @@
     outline: 0.7px solid white;
 }
 
+.form-descripion {
+    color: var(--color-blue);
+}
+
 .SubscribeNowButton {
     border-radius: 25px;
     border: none;
     font-size: 12px;
     padding: 0.5em;
+    background-color: var(--color-pink);
+    color: #fff;
 }
 
 p {

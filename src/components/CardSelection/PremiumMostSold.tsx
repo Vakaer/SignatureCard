@@ -50,7 +50,7 @@ export const PremiumMostSold = () => {
 		// );
 		setCardImage(arr);
 	}
-	console.log("test", cardImage);
+	// console.log("test", cardImage);
 	function next(arr: { id: number; image: string }[], index: number) {
 		setCurrentIndex(currentIndex + 1);
 		move(arr, 0, currentIndex);
@@ -61,23 +61,23 @@ export const PremiumMostSold = () => {
 	}
 
 	function move(arr: any, oldIndex: any, new_index: any) {
-		console.log("newIndex: ", new_index);
-		console.log("oldIndex: ", oldIndex);
+		// console.log("newIndex: ", new_index);
+		// console.log("oldIndex: ", oldIndex);
 
 		while (oldIndex < 0) {
 			oldIndex += arr.length;
-			console.log("first condition: ", oldIndex);
+			// console.log("first condition: ", oldIndex);
 		}
 		while (new_index < 0) {
 			new_index += arr.length;
-			console.log("second condition: ", new_index);
+			// console.log("second condition: ", new_index);
 		}
 		if (new_index >= arr.length) {
 			var k = new_index - arr.length;
 			while (k-- + 1) {
 				arr.push(undefined);
 			}
-			console.log(arr);
+			// console.log(arr);
 		}
 		arr.splice(new_index, 0, arr.splice(oldIndex, 1)[0]);
 		return arr;
@@ -143,7 +143,7 @@ export const PremiumMostSold = () => {
 							>
 								{cardImage.map((value: any, index: number) => {
 									const { id, image } = value;
-									console.log("id and img", id, image);
+									// console.log("id and img", id, image);
 									if (index < 5) {
 										if (index === 0) {
 											return (

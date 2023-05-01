@@ -18,20 +18,11 @@ export const SubscribeSave = (props: SubscribeSaveProps) => {
 			<div className='col-md-8 col-lg-4 col-11 form' data-aos='fade-down' data-aos-duration="500">
 				<div className='blurred-img'></div>
 				<div className=" closeBtn  btn btn-light rounded-circle">
-					<GrFormClose onClick={props.onClick} />
+					<GrFormClose onClick={props.onClick} className="icon-cross" />
 				</div>
 
 				<div
-					style={{
-						position: "absolute",
-						left: "0",
-						top: "0",
-						padding: "30px",
-						borderRadius: "25px",
-						width: "100%",
-						height: "100%",
-						backgroundColor: "transparent",
-					}}
+					className="form-content"
 				>
 					<h4 className='text-center form-title'>Subscribe & Save</h4>
 					<p className='text-center text-light w-80'>
@@ -56,7 +47,7 @@ export const SubscribeSave = (props: SubscribeSaveProps) => {
 						</div>
 						<p
 							style={{ fontSize: "8px", fontFamily: "HelveticaNowRegular" }}
-							className='text-center text-light'
+							className='text-center form-descripion'
 						>
 							By clicking SIGN UP NOW, you agree to receive marketing text messages from Lion Card
 							at the number provided, including messages sent by autodialer. Consent is not a
@@ -66,12 +57,10 @@ export const SubscribeSave = (props: SubscribeSaveProps) => {
 						</p>
 						<div className='d-flex flex-row'>
 							<button
-								className='w-75 SubscribeNowButton'
-								style={{ backgroundColor: "#144F53", color: "#fff" }}
-							>
+								className='w-75 SubscribeNowButton'>
 								Subscribe Now
 							</button>
-							<button className='w-25 SubscribeNowButton' style={{ color: "#144F53" }}>
+							<button className='w-25 SubscribeNowButton' >
 								More offers
 							</button>
 						</div>
