@@ -56,10 +56,16 @@
 }
 
 
-.custom-input {
+.custom-input-login-page {
     background-color: transparent;
     border-radius: 48px;
     padding: 1.5rem;
+}
+
+.custom-input-register-page {
+    background-color: transparent;
+    border-radius: 48px;
+    padding: 1rem;
 }
 
 .custom-input:focus {
