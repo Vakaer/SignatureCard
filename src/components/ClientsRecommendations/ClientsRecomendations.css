@@ -1,3 +1,10 @@
+@import url('../../components/theme/classic.css');
+@import url('../../components/theme/funky.css');
+
+.clients-recommendation-title {
+    color: var(--color-blue);
+}
+
 .border-radius-50 {
     border-radius: 50%;
     width: 20vh;
@@ -9,6 +16,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     mix-blend-mode: screen;
+}
+
+h4.clients {
+    color: var(--color-pink);
+}
+
+h4.brands {
+    color: var(--color-yellow)
 }
 
 .margin-clients {

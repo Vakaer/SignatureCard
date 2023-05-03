@@ -1,3 +1,7 @@
+@import url('../components/theme/classic.css');
+@import url('../components/theme/funky.css');
+
+
 @font-face {
     font-family: HalveticaNowRegular;
     src: url('../assets/fonts/HalveticaNow/HelveticaNowText-Regular.otf');
@@ -39,7 +43,7 @@
 }
 
 .background-image {
-    background-image: url("../assets/bg/bg.png");
+    background: var(--app-gradient-bg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background: rgb(73, 63, 47);

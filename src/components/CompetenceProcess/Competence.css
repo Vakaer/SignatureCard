@@ -1,5 +1,7 @@
+@import url('../theme/classic.css');
+@import url('../theme/funky.css');
+
 .competence-process-bg {
-    color: white;
     background: url('../../assets/videos/competence-bg.gif');
     background-repeat: no-repeat;
     mix-blend-mode: screen;
@@ -12,8 +14,26 @@
 
     padding: 10px;
     border-radius: 25px;
-    color: #144F53;
+    color: var(--color-white);
     border: none;
+    background-color: var(--color-pink);
+}
+
+.competence-title {
+    color: var(--color-parrot);
+}
+
+.competence-process-name {
+    color: var(--color-pink);
+}
+
+.competence-process-description {
+    color: var(--color-yellow);
+}
+
+
+svg.competence-process-icon {
+    fill: var(--color-blue);
 }
 
 @media only screen and (max-width: 576px) {

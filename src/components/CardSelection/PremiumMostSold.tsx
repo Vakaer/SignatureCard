@@ -94,7 +94,7 @@ export const PremiumMostSold = () => {
 			<section className='premium-most-sold position-relative negative-margin'>
 				<div className='row'>
 					<div className='mt-5 mb-5'>
-						<h2 className='text-center text-light' style={{ fontFamily: "NeueMontrealRegular", letterSpacing: '2px' }}>
+						<h2 className='text-center premium-most-sold-card-title'>
 							PREMIUM MOST SOLD
 						</h2>
 						<div className='col-7 ms-auto me-auto mt-5 mb-5 '>
@@ -167,17 +167,9 @@ export const PremiumMostSold = () => {
 								})}
 							</div>
 						</div>
-						<div className='text-center' style={{ marginTop: "5rem" }}>
+						<div className='text-center ' style={{ marginTop: "5rem" }}>
 							<button
-								style={{
-									backgroundColor: "#144F53",
-									borderRadius: "25px",
-									padding: "8px 30px",
-									border: "none",
-									color: "white",
-									marginRight: "1rem",
-								}}
-							>
+								className="lets-discuss-btn">
 								LET'S DISCUSS
 							</button>
 						</div>

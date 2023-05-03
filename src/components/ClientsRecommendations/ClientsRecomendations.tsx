@@ -17,7 +17,7 @@ export const ClientsRecomendations = () => {
 			<section className='clients-reccommendation'>
 				<div className='row'>
 					<div className='mt-5'>
-						<h2 className='text-center text-light'>CLIENTS AND RECOMMENDATIONS</h2>
+						<h2 className='text-center clients-recommendation-title'>CLIENTS AND RECOMMENDATIONS</h2>
 						<div className='d-flex flex-column gap-5 '>
 							<div
 								className='d-flex flex-row text-light ms-auto me-auto flex-wrap justify-content-around w-75'
@@ -61,7 +61,7 @@ export const ClientsRecomendations = () => {
 							</div>
 							<div style={{ width: "90%", margin: "5rem auto 5rem auto" }}>
 								<div className='Clients  d-flex flex-row align-items-center'>
-									<h4 className='rotation'>Clients</h4>
+									<h4 className='rotation clients'>Clients</h4>
 									{/* <div className='border-left ms-3'></div> */}
 									<div className='d-flex flex-wrap justify-content-around flex-row gap-2' data-aos='fade-up' data-aos-duration='500'>
 										<img src={logo1} className='blend-mode' />
@@ -79,7 +79,7 @@ export const ClientsRecomendations = () => {
 									</div>
 								</div>
 								<div className='Brands mt-5 d-flex  flex-row align-items-center'>
-									<h4 className='rotation'>Brands</h4>
+									<h4 className='rotation brands'>Brands</h4>
 									{/* <div className='border-left ms-3'></div> */}
 									<div className='d-flex flex-row justify-content-around flex-wrap  gap-2' data-aos='fade-down' data-aos-duration='500'>
 										<img src={logo1} className='blend-mode' />

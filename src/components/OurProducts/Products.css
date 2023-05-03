@@ -1,7 +1,14 @@
+@import url('../theme/classic.css');
+@import url('../theme/funky.css');
+
 .our-product-bg {
     background: url('../../assets/videos/our-product-bg.gif');
     background-repeat: no-repeat;
     mix-blend-mode: screen;
+}
+
+.our-product-dark-bg {
+    background-color: var(--our-product-dark-bg);
 }
 
 .credit-card {

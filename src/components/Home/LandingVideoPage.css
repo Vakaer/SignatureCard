@@ -57,6 +57,12 @@
     border: 1px solid var(--color-blue);
 }
 
+.create-card-btn:hover {
+    color: var(--color-blue);
+    border: var(--color-blue);
+    border: 2px solid var(--color-blue);
+}
+
 .lineh1 {
     left: 0;
     height: 2px;

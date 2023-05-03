@@ -4,10 +4,16 @@
     --color-pink: #fff;
     --color-blue: #fff;
     --color-yellow: #fff;
+    --color-black: #fff;
+    --color-parrot: #88FFC6;
+    --color-white: #000;
     --about-bg-color: none;
     --about-card-front: url('../../assets/pages-images/about/about-us-card-front.png');
     --about-card-back: url('../../assets/pages-images/about/about-us-card-back.png');
     --about-bottom-process-bg: #FFFFFF1A;
     --about-bottom-process-color: #fff;
+    --about-icons: #fff;
+    --our-product-dark-bg: transparent;
+    --app-gradient-bg: url("../../assets/bg/bg.png");
 
 }

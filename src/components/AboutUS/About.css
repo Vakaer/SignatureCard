@@ -3,7 +3,7 @@
 
 .about-us {
     width: 100%;
-    background-color: var(--about-bg-color);
+    background-color: var(--color-black);
 }
 
 .about-us-desc {
@@ -63,6 +63,11 @@
 }
 
 .about-us-icons {
+
+    color: var(--about-icons);
+}
+
+.w-h {
     width: 20px;
     height: 20px;
 }

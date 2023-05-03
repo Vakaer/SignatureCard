@@ -10,6 +10,11 @@
     border-radius: 48px 48px 0px 0px;
 }
 
+.premium-most-sold-card-title {
+    color: var(--color-blue);
+    font-family: "NeueMontrealRegular";
+    letter-spacing: 2px;
+}
 
 .negative-margin {
     margin-top: -10rem;
@@ -38,6 +43,15 @@
     border-radius: 50%;
     border: none;
     z-index: 5;
+}
+
+.lets-discuss-btn {
+    background-color: var(--color-parrot);
+    border-radius: 25px;
+    padding: 8px 30px;
+    border: none;
+    color: var(--color-black);
+    margin-right: 1rem;
 }
 
 .animate {

@@ -8,6 +8,7 @@ type GenericButtonProps = {
 	handleClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 const ProductButton = ({ children, style, className, handleClick }: GenericButtonProps) => {
+
 	return (
 		<>
 			<button

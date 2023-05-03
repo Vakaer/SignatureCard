@@ -5,9 +5,16 @@
     --color-pink: #FAAFEE;
     --color-blue: #72DAFE;
     --color-yellow: #F4FE81;
+    --color-black: #000;
+    --color-parrot: #88FFC6;
+    --color-white: #fff;
     --about-bg-color: #69C9FF;
-    --about-card-front: url('../../assets/pages-images/about/funcky-about-card.png');
-    --about-card-back: url('../../assets/pages-images/about/funcky-about-card-back.png');
+    --about-card-front: url('../../assets/pages-images/about/about-us-card-front-black.png');
+    --about-card-back: url('../../assets/pages-images/about/about-us-card-back-black.png');
     --about-bottom-process-bg: rgba(250, 175, 238, 0.44);
     --about-bottom-process-color: #000;
+    --about-icons: #F4FE81;
+    --our-product-dark-bg: #000;
+    --app-gradient-bg: #000;
+
 }

@@ -7,6 +7,9 @@ import iconHandshake from "../../assets/icons/ic_handshake.png";
 import iconShield from "../../assets/icons/ic_shield.png";
 import iconStar from "../../assets/icons/ic-star.png";
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { BsShieldCheck } from 'react-icons/bs'
+import { MdHandshake } from 'react-icons/md'
+import { AiOutlineStar } from 'react-icons/ai'
 export const About = () => {
 	let { scrollYProgress } = useScroll();
 	let y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
@@ -41,19 +44,19 @@ export const About = () => {
 					<div
 						className='mb-5 d-flex flex-row justify-content-around flex-wrap align-content-md-center bottom-process'>
 						<div>
-							<span>
-								<img src={iconHandshake} className='about-us-icons me-1'></img>Technical Inspection
+							<span className="about-us-icons">
+								<MdHandshake className='w-h me-1' />Technical Inspection
 								Association
 							</span>
 						</div>
-						<div>
+						<div className="about-us-icons">
 							<span>
-								<img src={iconShield} className='about-us-icons me-1'></img>200% Guarrantee
+								<BsShieldCheck className='w-h me-1' />200% Guarrantee
 							</span>
 						</div>
-						<div>
+						<div className="about-us-icons">
 							<span>
-								<img src={iconStar} className='about-us-icons me-1'></img>5-Star Rated
+								<AiOutlineStar className='w-h me-1' />5-Star Rated
 							</span>
 						</div>
 					</div>
