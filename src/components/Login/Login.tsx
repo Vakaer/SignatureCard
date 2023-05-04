@@ -4,6 +4,7 @@ import '../Login/Login.css'
 import mobileFrame from '../../assets/pages-images/Login/login-m-frame.svg'
 import { Link } from 'react-router-dom'
 import { Register } from '../Register/Register'
+import { LanguageToggle } from '../ui/Language/LanguageToggle'
 
 const SignIn = () => {
     return (
@@ -36,9 +37,10 @@ export const Login = () => {
             <section className='Login-page login-bg' >
                 <div className='container'>
                     <div className='row'>
-                        <div className='d-flex flex-column justify-content-start gap-4'>
-                            <div className='mt-3'>
+                        <div className='d-flex flex-column flex-row justify-content-between gap-4'>
+                            <div className='d-flex flex-row justify-content-between mt-3'>
                                 <Logo />
+                                <LanguageToggle />
                             </div>
                             <div className='d-flex flex-row justify-content-between gap-5 '>
                                 <div className='transparent-box col-6'>
