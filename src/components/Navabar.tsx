@@ -11,6 +11,7 @@ import { BiSearch } from 'react-icons/bi'
 
 interface NavbarProps {
 	showMenuHandler: () => void;
+	menu: boolean;
 }
 
 
@@ -49,7 +50,7 @@ function Navbar(props: NavbarProps) {
 						<input className='navInput' placeholder='search' />
 					</div>
 					<Link style={{ marginRight: '1rem' }} to={'./login'}>Login</Link>
-					<NavbarMenuButton onClick={props.showMenuHandler} />
+					<NavbarMenuButton menuIsShown={props.menu} onClick={props.showMenuHandler} />
 					<HiShoppingCart className='text-center  cart icons ms-2' />
 				</div>
 			</div>

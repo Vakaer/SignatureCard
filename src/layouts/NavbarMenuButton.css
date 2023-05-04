@@ -11,8 +11,36 @@
     align-items: center;
     border: none;
     background-color: var(--color-pink);
-
-
+    color: black;
 }
 
-.hamburger-menu:hover {}
+
+
+#funky-theme-navbar .hamburger-menu:hover {
+    background-color: #fa76e4;
+}
+
+.close-menu {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.close-menu:hover {
+    background-color: black;
+    color: white;
+}
+
+.popup-index-max {
+    z-index: 99999;
+}
+
+.popup-index-min {
+    z-index: 0;
+}

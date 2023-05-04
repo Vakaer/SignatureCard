@@ -8,42 +8,44 @@ import pinterest from "../../assets/icons/ic_pinterest.svg";
 import spotify from "../../assets/icons/ic_spotify.svg";
 import twitter from "../../assets/icons/ic_twitter.svg";
 import youtube from "../../assets/icons/ic_youtube.svg";
+import { AiOutlineClose } from 'react-icons/ai'
+import { FaFacebookF, FaPinterestP, FaSpotify } from 'react-icons/fa'
+import { BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs'
+
 
 type MenuProps = {
 	onClick: () => void;
-	onClassicClick?: () => void;
-	onFunkyClick?: () => void;
 	changeTheme: () => void;
-	IsClassic?: boolean;
-	IsFunky?: boolean;
+	theme: string;
+
 };
 const Menu = (props: MenuProps) => {
 	return (
 		<Modal onClose={props.onClick} >
 			<section >
 				<div className='container'>
-					<div className='row d-flex flex-column '>
-						<div className='d-flex pb-4 flex-row-reverse' style={{ paddingBottom: "2rem" }}>
+					<div className='row d-flex mt-5 flex-column '>
+						<div className='d-flex flex-row-reverse' style={{ paddingRight: '2.5rem' }}>
+							{/* <button onClick={props.onClick} className='socials'>
+								<AiOutlineClose className='imgDimensions' />
+							</button> */}
 							<button onClick={props.onClick} className='socials'>
-								<img src={cross} className='imgDimensions' />
+								<FaFacebookF className='imgDimensions' />
 							</button>
 							<button onClick={props.onClick} className='socials'>
-								<img src={facebook} className='imgDimensions' />
+								<BsInstagram className='imgDimensions' />
 							</button>
 							<button onClick={props.onClick} className='socials'>
-								<img src={instagram} className='imgDimensions' />
+								<FaPinterestP className='imgDimensions' />
 							</button>
 							<button onClick={props.onClick} className='socials'>
-								<img src={pinterest} className='imgDimensions' />
+								<FaSpotify className='imgDimensions' />
 							</button>
 							<button onClick={props.onClick} className='socials'>
-								<img src={spotify} className='imgDimensions' />
+								<BsTwitter className='imgDimensions' />
 							</button>
 							<button onClick={props.onClick} className='socials'>
-								<img src={twitter} className='imgDimensions' />
-							</button>
-							<button onClick={props.onClick} className='socials'>
-								<img src={youtube} className='imgDimensions' />
+								<BsYoutube className='imgDimensions' />
 							</button>
 						</div>
 						<section className='menueContent d-flex justify-content-md-between flex-lg-row flex-column  mt-5'>
@@ -81,10 +83,10 @@ const Menu = (props: MenuProps) => {
 							</div>
 						</section>
 						<div className="d-flex flex-row justify-content-between w-25 ms-auto">
-							<div className="d-flex flex-row toggle-theme-button-wrapper">
-								{/* <button className={`toggle-theme-button ${props.IsClassic ? 'bg-blue' : null}`} onClick={props.onClassicClick}>classic</button>
-								<button className={`toggle-theme-button ${props.IsFunky ? 'bg-blue' : null}`} onClick={props.onFunkyClick}>funky</button> */}
-								<button className="toggle-theme-button" onClick={props.changeTheme}>toggle</button>
+							<div className="d-flex flex-row toggle-theme-button-wrapper p-2">
+								<button className={`toggle-theme-button ${props.theme === "classic-theme-navbar" ? 'bg-blue' : 'bg-no-color'}`} onClick={props.changeTheme}>classic</button>
+								<button className={`toggle-theme-button ${props.theme === "funky-theme-navbar" ? 'bg-blue' : 'bg-no-color'}`} onClick={props.changeTheme}>funky</button>
+								{/* <button className="toggle-theme-button" onClick={props.changeTheme}>toggle</button> */}
 							</div>
 							<div className='d-flex mt-3 justify-content-end'>CREDITS</div>
 						</div>
