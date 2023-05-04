@@ -3,7 +3,6 @@
 
 .about-us {
     width: 100%;
-    background-color: var(--color-black);
 }
 
 .about-us-desc {
@@ -54,8 +53,8 @@
 }
 
 .learn-more-btn {
-    background-color: var(--color-pink);
-    color: #fff;
+    background-color: var(--about-us-button);
+    color: var(--color-white);
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 25px;

@@ -123,8 +123,17 @@
     border: none;
     font-size: 12px;
     padding: 0.5em;
-    background-color: var(--color-pink);
-    color: #fff;
+    background-color: var(--subscribe-now-btn-bg);
+    color: var(--subscribe-now-btn-text);
+}
+
+.MoreOffersButton {
+    border-radius: 25px;
+    border: none;
+    font-size: 12px;
+    padding: 0.5em;
+    background-color: var(--more-offers-btn-bg);
+    color: var(--more-offers-btn-text);
 }
 
 p {

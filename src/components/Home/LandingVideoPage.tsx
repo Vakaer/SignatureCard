@@ -21,7 +21,7 @@ export const LandingVideoPage = () => {
 					<motion.div className='video-background'>
 						<div
 							className='d-flex justify-content-center flex-column '
-							style={{ marginTop: "4rem" }}
+							style={{ marginTop: "3rem" }}
 						>
 							{formIsVisible && <SubscribeSave onClick={hideFormHandler} />}
 							<div className="d-flex flex-row justify-content-evenly align-items-center " style={{ marginTop: '20rem' }}>

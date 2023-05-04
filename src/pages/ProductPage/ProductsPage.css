@@ -1,5 +1,8 @@
+@import url('../../components/theme/classic.css');
+@import url('../../components/theme/funky.css');
+
 .bg-black {
-    background-image: url("../../assets/bg/bg.png");
+    background-image: var(--app-gradient-bg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background: rgb(73, 63, 47);

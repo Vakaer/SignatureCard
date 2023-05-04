@@ -52,17 +52,19 @@ function App() {
 	return (
 		<ThemeContext.Provider value={{ theme, toggleTheme }}>
 			<main>
-				<div className='background-image' id={theme}>
-					{menuIsShown && <Menu onClick={hideMenuHandler} changeTheme={toggleTheme} />}
-					{isCustomizeCardPage && <Navbar showMenuHandler={showMenuHandler} />}
-					<Routes>
+				<div style={{ backgroundColor: 'black' }}>
+					<div className='background-image' id={theme}>
+						{menuIsShown && <Menu onClick={hideMenuHandler} theme={theme} changeTheme={toggleTheme} />}
+						{isCustomizeCardPage && <Navbar menu={menuIsShown} showMenuHandler={showMenuHandler} />}
+						<Routes>
 
-						<Route path='/' element={<LandingPage />} />
-						<Route path='/products' element={<ProductsPage />} />
-						<Route path='/customize-card' element={<CardColorSelection />} />
-						<Route path='/behindTheScenes' element={<BehindTheScenes />} />
-						<Route path="/login" element={<Login />} />
-					</Routes>
+							<Route path='/' element={<LandingPage />} />
+							<Route path='/products' element={<ProductsPage />} />
+							<Route path='/customize-card' element={<CardColorSelection />} />
+							<Route path='/behindTheScenes' element={<BehindTheScenes />} />
+							<Route path="/login" element={<Login />} />
+						</Routes>
+					</div>
 				</div>
 			</main>
 		</ThemeContext.Provider>

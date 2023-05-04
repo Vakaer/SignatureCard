@@ -8,7 +8,11 @@
     --color-black: #000;
     --color-parrot: #88FFC6;
     --color-white: #fff;
-    --about-bg-color: #69C9FF;
+    --subscribe-now-btn-bg: var(--color-pink);
+    --subscribe-now-btn-text: var(--color-white);
+    --more-offers-btn-text: var(--color-white);
+    --more-offers-btn-bg: var(--color-pink);
+    --about-us-button: #FAAFEE;
     --about-card-front: url('../../assets/pages-images/about/about-us-card-front-black.png');
     --about-card-back: url('../../assets/pages-images/about/about-us-card-back-black.png');
     --about-bottom-process-bg: rgba(250, 175, 238, 0.44);
@@ -16,5 +20,9 @@
     --about-icons: #F4FE81;
     --our-product-dark-bg: #000;
     --app-gradient-bg: #000;
-
+    --competence-title: var(--color-parrot);
+    --competence-create-card-button-bg: var(--color-pink);
+    --competence-create-card-button-text: var(--color-white);
+    --premium-lets-discuss-button: var(--color-parrot);
+    --premium-product-lets-discuss-button-text: var(--color-black);
 }

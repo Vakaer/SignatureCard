@@ -14,13 +14,13 @@
 
     padding: 10px;
     border-radius: 25px;
-    color: var(--color-white);
+    color: var(--competence-create-card-button-text);
     border: none;
-    background-color: var(--color-pink);
+    background-color: var(--competence-create-card-button-bg);
 }
 
 .competence-title {
-    color: var(--color-parrot);
+    color: var(--competence-title);
 }
 
 .competence-process-name {

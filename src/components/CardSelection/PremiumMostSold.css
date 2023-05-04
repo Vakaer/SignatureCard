@@ -46,11 +46,11 @@
 }
 
 .lets-discuss-btn {
-    background-color: var(--color-parrot);
+    background-color: var(--premium-lets-discuss-button);
     border-radius: 25px;
     padding: 8px 30px;
     border: none;
-    color: var(--color-black);
+    color: var(--premium-lets-discuss-button-text);
     margin-right: 1rem;
 }
 

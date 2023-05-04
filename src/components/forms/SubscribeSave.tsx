@@ -60,7 +60,7 @@ export const SubscribeSave = (props: SubscribeSaveProps) => {
 								className='w-75 SubscribeNowButton'>
 								Subscribe Now
 							</button>
-							<button className='w-25 SubscribeNowButton' >
+							<button className='w-25 MoreOffersButton' >
 								More offers
 							</button>
 						</div>

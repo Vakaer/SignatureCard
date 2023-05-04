@@ -44,6 +44,7 @@
 
 .background-image {
     background: var(--app-gradient-bg);
+    transition: all 5s;
     background-repeat: no-repeat;
     background-size: cover;
     /* background: rgb(73, 63, 47);
