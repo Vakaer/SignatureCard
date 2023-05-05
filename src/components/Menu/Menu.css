@@ -34,12 +34,12 @@
     background-color: #FFFEF8;
 }
 
-.bg-no-color {
-    background-color: #FFFEF8;
-}
+
+
+
 
 .toggle-theme-button {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border: none;
     border-radius: 44px;
     background-color: #FFFEF8;

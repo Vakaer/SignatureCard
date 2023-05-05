@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../forms/SubscribeSave.css";
 import icClose from "./../../assets/icons/ic-close-form.svg";
 import { GrFormClose } from 'react-icons/gr'
+import { ThemeContext } from "../../App/App";
 
 type SubscribeSaveProps = {
 	onClick: () => void;
 };
 
 export const SubscribeSave = (props: SubscribeSaveProps) => {
+	const lang = useContext(ThemeContext)
 	const fieldSetStyle = {
 		width: "auto",
 		padding: "0 10px",
@@ -24,7 +26,7 @@ export const SubscribeSave = (props: SubscribeSaveProps) => {
 				<div
 					className="form-content"
 				>
-					<h4 className='text-center form-title'>Subscribe & Save</h4>
+					<h4 className='text-center form-title'>{lang?.strings.formTitle}</h4>
 					<p className='text-center text-light w-80'>
 						Get $20 off and be the first to know about our latest news, offers and promotions!
 					</p>

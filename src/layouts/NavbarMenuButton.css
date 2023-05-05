@@ -17,8 +17,18 @@
 
 
 #funky-theme-navbar .hamburger-menu:hover {
-    background-color: #fa76e4;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
 }
+
+#classic-theme-navbar .hamburger-menu:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+
 
 .close-menu {
     height: 50px;

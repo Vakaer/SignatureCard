@@ -1,0 +1,44 @@
+@import url('./classic.css');
+@import url('./funky.css');
+
+.toggle-theme-button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 44px;
+}
+
+.toggle-theme-button-wrapper {
+    border-radius: 44px;
+    height: fit-content;
+}
+
+.login-toggle-theme-button {
+    backdrop-filter: blur(60px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-toggle-theme-button {
+    background-color: rgba(2, 2, 1, 0.1);
+    color: var(--color-green);
+}
+
+.bg-no-color {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.color-green {
+    color: #144F53 !important;
+}
+
+.color-white {
+    color: white !important;
+}
+
+
+
+
+
+.bg-blue {
+    background-color: #144F53;
+    color: white;
+}

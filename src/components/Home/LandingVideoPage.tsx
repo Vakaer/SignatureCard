@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useContext } from "react";
 import "../Home/LandingVideoPage.css";
 import particles from '../../assets/videos/particles.gif'
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -6,9 +6,11 @@ import { SubscribeSave } from "../forms/SubscribeSave";
 import ProductButton from "../ui/ProductButton";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { ThemeContext } from "../../App/App";
 
 export const LandingVideoPage = () => {
 	const [formIsVisible, setFormIsVisible] = useState(true);
+	const lang = useContext(ThemeContext)
 	const hideFormHandler = () => {
 		setFormIsVisible(false);
 	};

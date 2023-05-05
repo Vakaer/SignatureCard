@@ -11,6 +11,7 @@ import youtube from "../../assets/icons/ic_youtube.svg";
 import { AiOutlineClose } from 'react-icons/ai'
 import { FaFacebookF, FaPinterestP, FaSpotify } from 'react-icons/fa'
 import { BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs'
+import { ThemeToggleButton } from "../theme/ThemeToggleButton";
 
 
 type MenuProps = {
@@ -25,10 +26,8 @@ const Menu = (props: MenuProps) => {
 			<section >
 				<div className='container'>
 					<div className='row d-flex mt-5 flex-column '>
-						<div className='d-flex flex-row-reverse' style={{ paddingRight: '2.5rem' }}>
-							{/* <button onClick={props.onClick} className='socials'>
-								<AiOutlineClose className='imgDimensions' />
-							</button> */}
+						<div className='d-flex flex-row-reverse mb-3' style={{ paddingRight: '2.5rem' }}>
+
 							<button onClick={props.onClick} className='socials'>
 								<FaFacebookF className='imgDimensions' />
 							</button>
@@ -83,11 +82,7 @@ const Menu = (props: MenuProps) => {
 							</div>
 						</section>
 						<div className="d-flex flex-row justify-content-between w-25 ms-auto">
-							<div className="d-flex flex-row toggle-theme-button-wrapper p-2">
-								<button className={`toggle-theme-button ${props.theme === "classic-theme-navbar" ? 'bg-blue' : 'bg-no-color'}`} onClick={props.changeTheme}>classic</button>
-								<button className={`toggle-theme-button ${props.theme === "funky-theme-navbar" ? 'bg-blue' : 'bg-no-color'}`} onClick={props.changeTheme}>funky</button>
-								{/* <button className="toggle-theme-button" onClick={props.changeTheme}>toggle</button> */}
-							</div>
+							<ThemeToggleButton bgColor="menu-toggle-theme-button " changeTheme={props.changeTheme} theme={props.theme} />
 							<div className='d-flex mt-3 justify-content-end'>CREDITS</div>
 						</div>
 					</div>
