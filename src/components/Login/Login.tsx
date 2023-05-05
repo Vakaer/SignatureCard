@@ -1,12 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Logo } from '../AnimatedLogo/Logo'
 import '../Login/Login.css'
 import mobileFrame from '../../assets/pages-images/Login/login-m-frame.svg'
 import { Link } from 'react-router-dom'
 import { Register } from '../Register/Register'
 import { LanguageToggle } from '../ui/Language/LanguageToggle'
+import { ThemeToggleButton } from '../theme/ThemeToggleButton'
+import { ThemeContext } from '../../App/App'
+
+type LoginPageChangeThemeProps = {
+    changeTheme: () => void;
+    theme: string;
+}
 
 const SignIn = () => {
+    const lang = useContext(ThemeContext)
     return (
         <>
             <div className='text-light col-10 ms-auto me-auto mt-4'>
@@ -29,7 +37,7 @@ const SignIn = () => {
         </>
     )
 }
-export const Login = () => {
+export const Login = (props: LoginPageChangeThemeProps) => {
     const [login, setIsLogin] = useState(true)
     const [register, setRegister] = useState(false)
     return (
@@ -40,7 +48,10 @@ export const Login = () => {
                         <div className='d-flex flex-column flex-row justify-content-between gap-4'>
                             <div className='d-flex flex-row justify-content-between mt-3'>
                                 <Logo />
-                                <LanguageToggle />
+                                <div className='d-flex w-50 flex-row justify-content-between'>
+                                    <LanguageToggle />
+                                    <ThemeToggleButton bgColor='login-toggle-theme-button color-white' changeTheme={props.changeTheme} theme={props.theme} />
+                                </div>
                             </div>
                             <div className='d-flex flex-row justify-content-between gap-5 '>
                                 <div className='transparent-box col-6'>

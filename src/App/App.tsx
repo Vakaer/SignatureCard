@@ -10,10 +10,14 @@ import { CardColorSelection } from "../pages/CustomizeCardPage/CardColorSelectio
 import { BehindTheScenes } from "../pages/BehindTheScenes/BehindTheScenes";
 import { Login } from "../components/Login/Login";
 import { createContext } from "react";
+import { useTranslation } from "../hooks/useTranslation";
 
 interface ThemeContextInterface {
 	theme: string;
 	toggleTheme: (theme: string) => void;
+	lang: string,
+	handleLanguageChange: (language: string) => void;
+	strings: Record<string, string>;
 }
 
 export const ThemeContext = createContext<ThemeContextInterface | null>(null);
@@ -23,6 +27,8 @@ function App() {
 	const pathname = location.pathname;
 	const [menuIsShown, setMenuIsShown] = useState(false);
 	const [isCustomizeCardPage, setIsCustomizeCardPage] = useState(true);
+	const [lang, setLang] = useState("en");
+	const strings = useTranslation(lang);
 	const [theme, setTheme] = useState('funky-theme-navbar')
 
 	useEffect(() => {
@@ -35,6 +41,9 @@ function App() {
 
 	}, [pathname, theme]);
 
+	const handleLanguageChange = (newLang: string) => {
+		setLang(newLang)
+	}
 
 	const toggleTheme = () => {
 		setTheme((curr) => (curr === "classic-theme-navbar") ? "funky-theme-navbar" : "classic-theme-navbar")
@@ -50,7 +59,7 @@ function App() {
 
 
 	return (
-		<ThemeContext.Provider value={{ theme, toggleTheme }}>
+		<ThemeContext.Provider value={{ theme, toggleTheme, lang, handleLanguageChange, strings }}>
 			<main>
 				<div style={{ backgroundColor: 'black' }}>
 					<div className='background-image' id={theme}>
@@ -62,7 +71,7 @@ function App() {
 							<Route path='/products' element={<ProductsPage />} />
 							<Route path='/customize-card' element={<CardColorSelection />} />
 							<Route path='/behindTheScenes' element={<BehindTheScenes />} />
-							<Route path="/login" element={<Login />} />
+							<Route path="/login" element={<Login theme={theme} changeTheme={toggleTheme} />} />
 						</Routes>
 					</div>
 				</div>
