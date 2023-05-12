@@ -11,6 +11,8 @@ import { BehindTheScenes } from "../pages/BehindTheScenes/BehindTheScenes";
 import { Login } from "../components/Login/Login";
 import { createContext } from "react";
 import { useTranslation } from "../hooks/useTranslation";
+import { PrivacyPolicy } from "../components/PrivacyPolicy/PrivacyPolicy";
+import { PrivacyPolicyPage } from "../pages/PrivacyPolicyPage/PrivacyPolicyPage";
 
 interface ThemeContextInterface {
 	theme: string;
@@ -66,12 +68,12 @@ function App() {
 						{menuIsShown && <Menu onClick={hideMenuHandler} theme={theme} changeTheme={toggleTheme} />}
 						{isCustomizeCardPage && <Navbar menu={menuIsShown} showMenuHandler={showMenuHandler} />}
 						<Routes>
-
 							<Route path='/' element={<LandingPage />} />
 							<Route path='/products' element={<ProductsPage />} />
 							<Route path='/customize-card' element={<CardColorSelection />} />
 							<Route path='/behindTheScenes' element={<BehindTheScenes />} />
 							<Route path="/login" element={<Login theme={theme} changeTheme={toggleTheme} />} />
+							<Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
 						</Routes>
 					</div>
 				</div>

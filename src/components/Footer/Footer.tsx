@@ -6,6 +6,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { BsInstagram, BsTwitter, BsYoutube, BsWechat, BsSinaWeibo } from 'react-icons/bs'
 import { FaFacebookF, FaPinterestP, FaLinkedinIn } from 'react-icons/fa'
 import { ImPlay2 } from 'react-icons/im'
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
 	const location = useLocation();
@@ -86,7 +87,7 @@ export const Footer = () => {
 								<hr className='hr' />
 								<ul>
 									<li className="footer-links">Terms of Use</li>
-									<li className="footer-links">Privacy Policy</li>
+									<li className="footer-links"><Link to={'./privacy-policy'}>Privacy Policy</Link></li>
 									<li className="footer-links">Cookies</li>
 								</ul>
 								<p className='title lh-2'>Media</p>
@@ -101,7 +102,7 @@ export const Footer = () => {
 						<hr className="hr w-100" />
 					</div>
 				</div>
-			</section>
+			</section >
 
 		</>
 	);
