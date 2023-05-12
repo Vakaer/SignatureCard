@@ -1,5 +1,54 @@
 #funky-theme-navbar {
 
+    /* =================== APP COLORS ======================= */
+    --color-parrot: #88FFC6;
+    --color-orange: #F97801;
+    --color-yellow: #F8D20A;
+    --color-blue: #69C9FF;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-green: #144F53;
+    --color-pink:#FAAFEE;
+
+ /* ================= NAVBAR THEME ==================== */
+
+    
+    --navbar-product-button-text: var(--color-orange);
+    --navbar-product-button-border: var(--color-orange);
+    --navbar-play-button: var(--color-orange);
+    --navbar-hamburger-button-bg: var(--color-orange);
+    --navbar-hamburger-button-icon: var(--color-black);
+    --navbar-cart-icon: var(--color-yellow);
+
+    /* ================= LANDING GIF PAGE  ==================== */
+
+    --landing-discover-button: var(--color-yellow);
+    --landing-discover-button-bottom-animation: var(--color-white);
+    --landing-behind-the-scene-button: var(--color-blue);
+    --landing-create-your-card-now-button-text: var(--color-parrot);
+    --landing-create-your-card-now-button-border: var(--color-parrot);
+    
+    /* ================= LANDING GIF PAGE SUBSCRIBE AND SAVE FORM  ==================== */
+
+    --form-close-button-bg: var(--color-blue);
+    --form-close-button-icon: var(--color-white);
+    --form-title: var(--color-orange);
+    --form-description: var(--color-blue);
+    --form-label: var(--color-blue);
+    --form-subscribe-button-bg: var(--color-orange);
+    --form-subscribe-button-text: var(--color-white);
+    --form-offers-button-bg: var(--color-orange);
+    --form-offers-button-text: var(--color-white);
+
+
+
+    
+    
+
+    
+    
+
+
     /* Navbar styling */
 
     --color-pink: #FAAFEE;
@@ -8,10 +57,10 @@
     --color-black: #000;
     --color-parrot: #88FFC6;
     --color-white: #fff;
-    --subscribe-now-btn-bg: var(--color-pink);
+    --subscribe-now-btn-bg: var(--color-orange);
     --subscribe-now-btn-text: var(--color-white);
     --more-offers-btn-text: var(--color-white);
-    --more-offers-btn-bg: var(--color-pink);
+    --more-offers-btn-bg: var(--color-orange);
     --about-us-button: #FAAFEE;
     --about-card-front: url('../../assets/pages-images/about/about-us-card-front-black.png');
     --about-card-back: url('../../assets/pages-images/about/about-us-card-back-black.png');

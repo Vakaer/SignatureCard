@@ -27,12 +27,13 @@
 
 
 .moving-border-bottom {
-    margin-top: 10rem;
+    margin-top: 6rem;
     width: 60px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-self: center;
+    color: var(--color-white);
 }
 
 
@@ -52,21 +53,21 @@
 }
 
 .create-card-btn {
-    color: var(--color-blue);
-    border: var(--color-blue);
-    border: 1px solid var(--color-blue);
+    color: var(--color-parrot);
+    border: var(--color-parrot);
+    border: 1px solid var(--color-parrot);
 }
 
 .create-card-btn:hover {
-    color: var(--color-blue);
-    border: var(--color-blue);
-    border: 2px solid var(--color-blue);
+    color: var(--color-parrot);
+    border: var(--color-parrot);
+    border: 2px solid var(--color-parrot);
 }
 
 .lineh1 {
     left: 0;
     height: 2px;
-    background-color: var(--color-yellow);
+    background-color: var(--color-white);
     animation: lineH 2s infinite linear 5s;
     animation-delay: 100ms;
     animation: lineH 5s infinite linear 5s;

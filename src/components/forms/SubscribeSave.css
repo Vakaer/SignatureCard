@@ -4,7 +4,7 @@
 
 .form {
 
-    height: 45vh;
+    height: 350px;
     position: absolute;
     top: 35%;
     left: 33%;
@@ -72,11 +72,18 @@
 }
 
 
-.form-title {
+#funky-theme-navbar .form-title {
     font-family: "HalveticaNowRegular";
-    color: var(--color-pink);
+    color: var(--color-orange);
+}
+#classic-theme-navbar .form-title {
+    font-family: "HalveticaNowRegular";
+    color: var(--color-blue);
 }
 
+.form-promo-desc{
+    color: var(--color-blue);
+}
 .inputBox {
     position: relative;
 }

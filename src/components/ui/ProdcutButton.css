@@ -1,8 +1,9 @@
 @import '../theme/classic.css';
 @import '../theme/funky.css';
 
-.create-card-btn {
+#funky-theme-navbar .create-card-btn {
     color: var(--color-blue);
-    border: var(--color-blue);
-    border: 1px solid var(--color-blue);
+}
+#classic-theme-navbar .create-card-btn {
+    color: var(--color-white);
 }

@@ -34,7 +34,7 @@ function Navbar(props: NavbarProps) {
 		<nav className="navbar">
 			<div className='row col-12 justify-content-between position-relative margin'>
 				<div className='col-3 d-inline mt-md-4 text-center'>
-					<ProductButton style={{ color: "white" }} className="product-btn">
+					<ProductButton  className="product-btn">
 						<Link to='products'>Products</Link>
 					</ProductButton>
 					<FiPlay className='ms-3 play-btn' />

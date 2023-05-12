@@ -27,7 +27,7 @@ export const SubscribeSave = (props: SubscribeSaveProps) => {
 					className="form-content"
 				>
 					<h4 className='text-center form-title'>{lang?.strings.formTitle}</h4>
-					<p className='text-center text-light w-80'>
+					<p className='text-center form-promo-desc w-80'>
 						Get $20 off and be the first to know about our latest news, offers and promotions!
 					</p>
 					<form className='signupForm d-flex flex-column gap-3 m-auto'>

@@ -23,14 +23,17 @@
     width: 80px;
 }
 
-.product-btn {
-    border: 1px solid var(--color-pink);
+#funky-theme-navbar .product-btn {
+    border: 1px solid var(--color-orange);
+}
+#classic-theme-navbar .product-btn {
+    border: 1px solid var(--color-white);
 }
 
 .product-btn:hover {
     color: var(--color-blue);
     background-color: transparent;
-    border: 2px solid var(--color-pink);
+    border: 2px solid var(--color-orange);
 }
 
 .product-btn:hover a {
@@ -38,14 +41,14 @@
 }
 
 .play-btn {
-    color: var(--color-pink);
+    color: var(--color-orange);
     height: 35px;
     width: 35px;
 
 }
 
 .play-btn:hover {
-    color: var(--color-pink);
+    color: var(--color-orange);
     height: 40px;
     width: 40px;
 
@@ -76,7 +79,7 @@ a {
 }
 
 .cart {
-    font-size: 20px;
+    font-size: 30px;
     color: var(--color-yellow);
 }
 

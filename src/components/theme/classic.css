@@ -1,8 +1,22 @@
 #classic-theme-navbar {
 
+    /* =================== APP COLORS ======================= */
+
+    /* =================== APP COLORS ======================= */
+    --color-parrot: #88FFC6;
+    --color-orange: #F97801;
+    --color-yellow: #F8D20A;
+    --color-blue: #69C9FF;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-green: #144F53;
+    --color-pink: #FAAFEE;
+    /* ================= NAVBAR THEME ==================== */
+
+
+
     /* Classic theme Navbar */
     --color-pink: #fff;
-    --color-blue: #fff;
     --color-yellow: #fff;
     --color-black: #000;
     --color-parrot: #88FFC6;

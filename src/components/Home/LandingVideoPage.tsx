@@ -7,6 +7,7 @@ import ProductButton from "../ui/ProductButton";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ThemeContext } from "../../App/App";
+import {GoPlus} from 'react-icons/go'
 
 export const LandingVideoPage = () => {
 	const [formIsVisible, setFormIsVisible] = useState(true);
@@ -45,12 +46,13 @@ export const LandingVideoPage = () => {
 							</div>
 							<div className='moving-border-bottom ' data-aos='fade-left' data-aos-duration="1000">
 								<button
-									className='discover-btn'
+									className='discover-btn '
 									style={{ backgroundColor: "transparent", border: "none" }}
 								>
-									discover
+									<span style={{display:'ruby'}}> <GoPlus/> discover </span>
 								</button>
-								<div className='lineh1 d-inline-block'></div>
+
+								 <div className='lineh1 d-inline-block'></div>
 							</div>
 
 							<div className='text-center create-card-button-wrapper' data-aos='fade-up' data-aos-duration="500">
